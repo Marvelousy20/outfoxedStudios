@@ -95,9 +95,9 @@ export default function Trustees() {
             placeholder="blur"
             src={Moon}
             alt=""
-            className="absolute !top-16 -z-10 h-full w-full object-cover bg-neutral-900 bg-opacity-30"
+            className=" !top-16 -z-10 object-cover bg-neutral-900 mix-blend-hard-light"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[rgba(13,22,27,0.30)] to-[rgba(13,22,27,0.30)] mix-blend-multiply" />
+          <div className="bg-blend-hard-light mix-blend-hard absolute inset-0 bg-gradient-to-b from-[rgba(13,22,27,0.30)] to-[rgba(13,22,27,0.30)]" />
           <div className="z-10 text-white relative">
             <div className="carousel carousel-center max-w-full p-4 space-x-4">
               {trustees.map((trustee, i) => (
