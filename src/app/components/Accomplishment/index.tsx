@@ -44,7 +44,7 @@ export default function Accomplishment() {
       </div>
 
       {/* container for three cards */}
-      <div className="bg-secDark px-24 py-6 rounded-b-lg flex justify-between items-center">
+      <div className="bg-card px-24 py-6 rounded-b-lg flex justify-between items-center">
         {/* First card */}
         <div className="">
           <h3>Live Feed</h3>

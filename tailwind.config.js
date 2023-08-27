@@ -19,6 +19,7 @@ module.exports = {
         red: "#FF0000",
         offwhite: "#D2D2D2",
         secDark: "#0D161B",
+        card: "#091318",
       },
       screens: {
         tiny: "300px",
