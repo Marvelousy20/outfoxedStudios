@@ -3,7 +3,7 @@ import Title from "../Title";
 
 export default function Services() {
   return (
-    <div className="lg:pt-44 lg:px-28">
+    <div className="lg:pt-44 lg:px-28" id="services">
       <div className="text-center">
         <Title title="How I help you" />
         <div className="inline-flex">

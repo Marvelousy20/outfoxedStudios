@@ -1,7 +1,10 @@
 export default function Footer() {
   return (
     <div className="bg-background relative bottom-0">
-      <div className="flex justify-center">
+      <div className="absolute inset-0">
+        <img src="/images/line.png" alt="line" className="w-full h-full" />
+      </div>
+      <div className="flex justify-center relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="490"
@@ -72,7 +75,7 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="flex justify-around items-center mt-20">
+      <div className="flex justify-around items-center mt-20 relative">
         <div className="grid text-primary50">
           <a href="mailto:hello@outfoxed.com">hello@outfoxed.com</a>
           <br />
@@ -96,7 +99,7 @@ export default function Footer() {
               <a href="/about">About</a>
             </li>
             <li>
-              <a href="/contact-us">Contact us</a>
+              <a href="/contact">Contact us</a>
             </li>
           </ul>
         </div>

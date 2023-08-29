@@ -1,16 +1,25 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Background from "../../../../public/images/background.png";
 import Title from "../Title";
+import blast from "../../../../public/images/blast.png";
+import blastblue from "../../../../public/images/blastblue.png";
+import rocket from "../../../../public/images/rocket.png";
 
 export default function Hero() {
-  const [activeItem, setActiveItem] = useState("item1");
+  const icons = [blast, blastblue, rocket];
 
-  const handleActiveItem = (itemId: string) => {
-    setActiveItem(itemId);
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % icons.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="">
@@ -28,17 +37,27 @@ export default function Hero() {
         <Title title="Welcome! Outfoxed studio crafts contents that SCALE" />
 
         <div className="text-primary50 text-7xl font-bold mt-5">
-          <div className="inline-flex">
+          <div className="inline-flex gap-12 relative">
             <h3>Blast off</h3>
-            <span>
-              <Image
-                src="/images/blast.png"
-                alt="blast"
-                width="90"
-                height="90"
-                priority
-              />
-            </span>
+
+            <div className="icon-slider">
+              {icons.map((icon, index) => (
+                <div
+                  key={index}
+                  className={`icon absolute -right-8 top-1 ${
+                    index === currentIndex ? "active" : ""
+                  }`}
+                >
+                  <Image
+                    src={icon}
+                    alt="blast"
+                    width="70"
+                    height="70"
+                    priority
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
           <h3>to Content Excellence!</h3>
@@ -50,7 +69,7 @@ export default function Hero() {
           success in your industry.
         </div>
 
-        <button className="w-64 h-16 lg:mb-4 hover:opacity-75 ease-in-out transition-all duration-300 px-6 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex">
+        <button className="w-64 h-16 lg:mb-4 hover:opacity-75 ease-in-out transition-all duration-300 px-6 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex shadow hover:shadow-red hover:shadow-2xl">
           Let&#39;s talk <div className="w-3.5 h-px border border-white"></div>
           <div className="text-white text-lg font-normal leading-relaxed">
             Contents
@@ -65,44 +84,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* <div className="carousel carousel-center mx-auto max-w-6xl p-4 space-x-4 rounded-box relative z-10 flex">
-        <div className="carousel-item">
-          <Image
-            src="/images/carousel1.png"
-            alt="img"
-            width={1248}
-            height={832}
-            className="rounded-box"
-            priority
-          />
-        </div>
-
-        <div className="carousel-item">
-          <Image
-            src="/images/carousel1.png"
-            alt="img"
-            width={1248}
-            height={832}
-            className="rounded-box"
-            priority
-          />
-        </div>
-
-        <div className="carousel-item">
-          <Image
-            src="/images/carousel1.png"
-            alt="img"
-            width={1248}
-            height={832}
-            className="rounded-box"
-            priority
-          />
-        </div>
-
-      </div> */}
-
-      <div className="carousel relative place-content-center">
-        <div id="item1" className="carousel-item w-full flex justify-center">
+      <div className="carousel w-full">
+        <div
+          id="slide1"
+          className="carousel-item relative w-full justify-center"
+        >
           <Image
             src="/images/carousel1.png"
             alt="img"
@@ -111,8 +97,25 @@ export default function Hero() {
             className="rounded-box"
             priority
           />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a
+              href="#slide4"
+              className="btn btn-circle bg-primary-main text-white"
+            >
+              ❮
+            </a>
+            <a
+              href="#slide2"
+              className="btn btn-circle bg-primary-main text-white"
+            >
+              ❯
+            </a>
+          </div>
         </div>
-        <div id="item2" className="carousel-item w-full flex justify-center">
+        <div
+          id="slide2"
+          className="carousel-item relative w-full justify-center"
+        >
           <Image
             src="/images/carousel1.png"
             alt="img"
@@ -121,8 +124,25 @@ export default function Hero() {
             className="rounded-box"
             priority
           />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a
+              href="#slide1"
+              className="btn btn-circle bg-primary-main text-white"
+            >
+              ❮
+            </a>
+            <a
+              href="#slide3"
+              className="btn btn-circle bg-primary-main text-white"
+            >
+              ❯
+            </a>
+          </div>
         </div>
-        <div id="item3" className="carousel-item w-full flex justify-center">
+        <div
+          id="slide3"
+          className="carousel-item relative w-full justify-center"
+        >
           <Image
             src="/images/carousel1.png"
             alt="img"
@@ -131,30 +151,21 @@ export default function Hero() {
             className="rounded-box"
             priority
           />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a
+              href="#slide2"
+              className="btn btn-circle bg-primary-main text-white"
+            >
+              ❮
+            </a>
+            <a
+              href="#slide4"
+              className="btn btn-circle bg-primary-main text-white"
+            >
+              ❯
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center w-full py-2 gap-2">
-        <a
-          href="#item1"
-          className={`h-2 w-2 rounded-box ${
-            activeItem === "item1" ? "bg-orange-400" : "bg-gray-400"
-          }`}
-          onClick={() => handleActiveItem("item1")}
-        ></a>
-        <a
-          href="#item2"
-          className={`h-2 w-2 rounded-box ${
-            activeItem === "item2" ? "bg-orange-400" : "bg-gray-400"
-          }`}
-          onClick={() => handleActiveItem("item2")}
-        ></a>
-        <a
-          href="#item3"
-          className={`h-2 w-2 rounded-box ${
-            activeItem === "item3" ? "bg-orange-400" : "bg-gray-400"
-          }`}
-          onClick={() => handleActiveItem("item3")}
-        ></a>
       </div>
 
       <div className="max-w-3xl mx-auto text-center mt-24">

@@ -5,7 +5,8 @@ import Title from "../components/Title";
 import brandVideo from "../../../public/images/brandVideo.png";
 import brandVideo2 from "../../../public/images/brand2.png";
 import Moon2 from "../../../public/images/Moon2.svg";
-import Link from "next/link";
+// import Link from "next/link";
+import ContactCard from "../components/ContactCard";
 
 const data = [
   {
@@ -155,7 +156,7 @@ export default function Work() {
       </div>
 
       {/* conquer section */}
-      <div className="max-w-4xl text-white text-center z-10 mx-auto lg:mt-44 bg-card bg-opacity-75 rounded-3xl backdrop-blur-xl lg:px-28 lg:py-24">
+      {/* <div className="max-w-4xl text-white text-center z-10 mx-auto lg:mt-44 bg-card bg-opacity-75 rounded-3xl backdrop-blur-xl lg:px-28 lg:py-24">
         <Title title="Contact us" />
         <h3 className="text-center text-4xl font-bold mb-2">
           Conquer the content world and make your mark in your industry!
@@ -173,7 +174,8 @@ export default function Work() {
           <span>contents</span>
           <Image src="/images/blast2.png" alt="blast2" width="26" height="26" />
         </Link>
-      </div>
+      </div> */}
+      <ContactCard text="Conquer the content world and make your mark in your industry!" />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import { Smooch } from "next/font/google";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,6 +14,12 @@ export default function Navbar() {
       setIsScrolled(false);
     }
   });
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.querySelector(sectionId);
+
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="bg-transparent h-[110px] px-24 text-lg text-white z-20 sticky top-0">
@@ -29,10 +36,10 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/">Services</Link>
+          <Link href="#services">Services</Link>
         </li>
         <li>
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
           <Link href="/works">Works</Link>
