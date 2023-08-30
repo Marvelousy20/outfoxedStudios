@@ -243,7 +243,7 @@ export default function Trustees() {
 
             <Link
               href="/"
-              className="inline-flex gap-2 bg-primary-main px- py-3 rounded-lg mt-4 px-6 items-center hover:opacity-75 ease-in-out transition-all duration-300"
+              className="inline-flex hover:shadow-hard gap-2 bg-primary-main px- py-3 rounded-lg mt-4 px-6 items-center hover:opacity-75 ease-in-out transition-all duration-300"
             >
               <span>Let&apos;s talk</span>
               <div className="w-3.5 h-px border border-white"></div>

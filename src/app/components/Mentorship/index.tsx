@@ -178,7 +178,7 @@ export default function Mentorship() {
           <div className="flex items-center justify-center mt-16 z-20">
             <Link
               href="/"
-              className="flex items-center gap-2 bg-primary-main px-6 py-3 rounded-lg hover:opacity-75 ease-in-out transition-all duration-300"
+              className="flex hover:shadow-hard items-center gap-2 bg-primary-main px-6 py-3 rounded-lg hover:bg-opacity-75 ease-in-out transition-all duration-300"
             >
               <span>More Works</span>
               <Image

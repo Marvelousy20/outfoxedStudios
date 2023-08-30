@@ -6,28 +6,26 @@ html {
     scroll-behavior: smooth;
 }
 
-a:hover {
-    opacity: 50%;
-}
-
 /* IconSlider.css */
 .icon-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Adjust to your needs */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust to your needs */
+}
   
-  .icon {
-    opacity: 0;
-    transform: translateY(10px); /* Optional: Add a fade-in effect */
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .icon.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.icon {
+  opacity: 0;
+  transform: translateY(10px); /* Optional: Add a fade-in effect */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.icon.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
   

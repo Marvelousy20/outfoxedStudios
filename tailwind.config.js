@@ -21,6 +21,9 @@ module.exports = {
         secDark: "#0D161B",
         card: "#091318",
       },
+      boxShadow: {
+        hard: "6px 8px 0px -2px white;",
+      },
       screens: {
         tiny: "300px",
         tablet: "640px",

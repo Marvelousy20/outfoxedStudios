@@ -67,7 +67,7 @@ export default function Services() {
               <span>- Short</span>
               <span>- Full length videos</span>
             </div>
-            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2">
+            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300">
               Hire me
             </button>
           </div>
@@ -88,7 +88,7 @@ export default function Services() {
               <span>- banners</span>
               <span>- merchandise</span>
             </div>
-            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2">
+            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300">
               Hire me
             </button>
           </div>
@@ -110,7 +110,7 @@ export default function Services() {
               <span>- Content Ideation</span>
               <span>- Content Strategy</span>
             </div>
-            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2">
+            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300">
               Hire me
             </button>
           </div>
@@ -129,7 +129,7 @@ export default function Services() {
               <span>- Short</span>
               <span>- Full length</span>
             </div>
-            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2">
+            <button className="text-primary-main border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300">
               Hire me
             </button>
           </div>
