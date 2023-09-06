@@ -8,10 +8,9 @@ interface Props {
 
 export default function ContactCard({ text }: Props) {
   return (
-    <div className="max-w-4xl text-white text-center z-10 mx-auto lg:mt-44 bg-card bg-opacity-75 rounded-3xl backdrop-blur-xl lg:px-28 lg:py-24">
+    <div className="max-w-4xl text-white mt-20 md:mt-0 text-center z-10 mx-auto lg:mt-44 bg-card bg-opacity-75 rounded-3xl backdrop-blur-xl px-4 lg:px-28 py-24">
       <Title title="Contact us" />
-      <h3 className="text-center text-4xl font-bold mb-2">
-        {/* Conquer the content world and make your mark in your industry! */}
+      <h3 className="text-center text-3xl md:text-4xl font-bold mb-2">
         {text}
       </h3>
       <p className="text-lg font-normal leading-relaxed text-offwhite">

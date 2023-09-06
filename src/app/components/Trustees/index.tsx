@@ -2,6 +2,7 @@ import Title from "../Title";
 import Image from "next/image";
 import Moon from "../../../../public/images/Moon.png";
 import Link from "next/link";
+import HomeContact from "../ContactCard/homeContact";
 
 const trustees = [
   {
@@ -234,7 +235,10 @@ export default function Trustees() {
           </div>
 
           {/* conquer section */}
-          <div className="px-4 my-16 md:my-0 md:px-0">
+          <div className="px-4 md:px-0">
+            <HomeContact />
+          </div>
+          {/* <div className="px-4 my-16 md:my-0 md:px-0">
             <div className="md:max-w-4xl text-center z-10 mx-auto lg:mt-44 bg-neutral-900 bg-opacity-75 rounded-3xl backdrop-blur-xl lg:px-28 lg:py-24 py-10">
               <Title title="Contact us" />
               <h3 className="text-3xl md:text-4xl font-bold mb-2">
@@ -260,7 +264,7 @@ export default function Trustees() {
                 />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -11,15 +11,17 @@ export default function About() {
         <Image
           src={contactImage}
           alt="contact"
-          layout="fill"
+          width="1440"
+          height="1140"
           placeholder="blur"
+          className="w-full"
           priority
         />
       </div>
-      <div className="relative z-10">
-        <div className="flex flex-col pt-32 text-center">
+      <div className="relative z-10 px-4">
+        <div className="flex flex-col pt-16 md:pt-24 lg:pt-32 text-start md:text-center">
           <Title title="Who we are" />
-          <div className="text-white text-7xl font-bold mt-5">
+          <div className="text-white text-4xl xl:text-7xl leading-[60px] font-bold md:mt-5">
             <div className="inline-flex items-center space-x-4">
               <h3>Yes, This is</h3>
               <span>
@@ -35,31 +37,48 @@ export default function About() {
 
             <h3>OutFoxed Studio</h3>
 
-            <p className="text-offwhite text-sm mt-6">
-              And we are transforming your brand one content at a time
+            <p className="text-offwhite text-base md:mt-6 font-normal">
+              And we are transforming your brand one
+              <br className="block md:hidden" /> content at a time
             </p>
           </div>
 
-          <div className="pt-40 max-w-2xl mx-auto text-start">
-            <Title title="Who are we" />
-            <p className="text-lg text-offwhite font-normal leading-relaxed mt-6">
-              Outfoxed as an expert and experienced creator understands the
-              challenges you face in today&#39;s competitive landscape. I am
-              here to support, inspire, and collaborate with you, sharing in
-              your vision and helping you achieve content greatness..Outfoxed as
-              an expert and experienced creator understands the challenges you
-              face in today&#39;s competitive landscape. I am here to support,
-              inspire, and collaborate with you, sharing in your vision and
-              helping you achieve content greatness..Outfoxed as an expert and
-              experienced creator understands the challenges you face in
-              today&#39;s competitive landscape. I am here to support, inspire,
-              and collaborate with you, sharing in your vision and helping you
-              achieve content greatness..Outfoxed as an expert and experienced
-              creator understands the challenges you face in today&#39;s
-              competitive landscape. I am here to support, inspire, and
-              collaborate with you, sharing in your vision and helping you
-              achieve content greatness..
-            </p>
+          <div className="pt-20 md:pt-32 lg:pt-40 max-w-2xl mx-auto text-start space-y-24">
+            <div>
+              <Title title="Who are we" />
+              <p className="text-lg text-offwhite font-normal leading-relaxed mt-6">
+                Outfoxed as an expert and experienced creator understands the
+                challenges you face in today&#39;s competitive landscape. I am
+                here to support, inspire, and collaborate with you, sharing in
+                your vision and helping you achieve content greatness..Outfoxed
+                as an expert and experienced creator understands the challenges
+                you face in today&#39;s competitive landscape. I am here to
+                support, inspire, and collaborate with you, sharing in your
+                vision and helping you achieve content greatness.
+                <br className="!block md:hidden" />
+                <br className="!block md:hidden" />
+                Outfoxed as an expert and experienced creator understands the
+                challenges you face in today&#39;s competitive landscape. I am
+                here to support, inspire, and collaborate with you, sharing in
+                your vision and helping you achieve content greatness..Outfoxed
+                as an expert and experienced creator understands the challenges
+                you face in today&#39;s competitive landscape. I am here to
+                support, inspire, and collaborate with you, sharing in your
+                vision and helping you achieve content greatness..
+              </p>
+            </div>
+
+            <div>
+              <Title title="Our Aim" />
+              <h1 className="text-4xl font-bold mb-4">Our Mission</h1>
+              <p className="text-offwhite">
+                Take your brand to the next level, byhiring me! Outfoxed as an
+                expert and experienced creator understands the challenges you
+                face in today&apos;s competitive landscape. I am here to
+                support, inspire, and collaborate with you, sharing in your
+                vision and helping you achieve content greatness..
+              </p>
+            </div>
           </div>
         </div>
 

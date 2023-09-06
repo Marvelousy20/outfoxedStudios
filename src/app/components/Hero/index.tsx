@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="lg:max-w-[55rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0">
         <Title title="Welcome! Outfoxed studio crafts contents that SCALE" />
 
-        <div className="text-primary50 text-4xl lg:text-5xl xl:text-7xl leading-[50px] font-bold mt-2 md:mt-5">
+        <div className="text-primary50 text-5xl xl:text-7xl leading-[50px] font-bold mt-2 md:mt-5">
           <div className="inline-flex xl:gap-12 relative">
             <h3>Blast off</h3>
 
