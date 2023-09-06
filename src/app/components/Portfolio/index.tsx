@@ -83,7 +83,7 @@ export default function Portfolio() {
         <h3 className="text-lg font-normal leading-relaxed mb-10">
           Choose category here
         </h3>
-        {/* <div className="tabs mt-6 relative">
+        <div className="tabs mt-6 relative">
           {works.map((work, index) => (
             <div key={index}>
               <a
@@ -105,7 +105,9 @@ export default function Portfolio() {
             <div
               key={index}
               className={`w-full ${
-                selected === work.title ? "grid grid-cols-2 gap-12" : "hidden"
+                selected === work.title
+                  ? "grid grid-cols-1 md:grid-cols-2 gap-12"
+                  : "hidden"
               }`}
             >
               {work.data.map((data, i) => (
@@ -119,10 +121,10 @@ export default function Portfolio() {
                       placeholder="blur"
                       priority
                     />
-                    <h3 className="text-offwhite text-3xl font-semibold leading-relaxed">
+                    <h3 className="text-offwhite text-xl md:text-3xl font-semibold leading-relaxed">
                       {data.course}
                     </h3>
-                    <p className="text-offwhite text-lg font-normal leading-relaxed">
+                    <p className="text-offwhite text-base md:text-lg font-normal leading-relaxed">
                       {data.description}
                     </p>
                   </div>
@@ -130,7 +132,7 @@ export default function Portfolio() {
               ))}
             </div>
           ))}
-        </div> */}
+        </div>
 
         <div className="flex items-center justify-center mt-6 !z-20">
           <Link
