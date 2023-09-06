@@ -29,7 +29,11 @@ export default function ScrollToTopButton() {
   }, []);
 
   return (
-    <div className={`fixed bottom-4 right-4 ${isVisible ? "block" : "hidden"}`}>
+    <div
+      className={`fixed bottom-4 z-50 right-4 ${
+        isVisible ? "block" : "hidden"
+      }`}
+    >
       <button
         onClick={scrollToTop}
         className="font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"

@@ -2,17 +2,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import Title from "../Title";
+import MobileMentorship from "./mobileMentorship";
 
 export default function Mentorship() {
   return (
-    <div className="relative text-center pt-[12rem]">
-      <div className="text-center">
+    <div className="relative text-start md:text-center pt-[12rem]">
+      <div className="">
         <Title title="Get mentored" />
         <div className="inline-flex">
-          <h3 className="text-5xl font-bold">Mentorship/Coaching</h3>
+          <h3 className="text-3xl md:text-5xl font-bold">
+            Mentorship/Coaching
+          </h3>
         </div>
 
-        <div className="text-offwhite text-lg font-normal leading-relaxed">
+        <div className="text-offwhite text-base md:text-lg font-normal leading-relaxed">
           <div className="relative inline-block">
             <div>My content knowledge to help you scale</div>
             <div className="absolute -right-16 top-0">
@@ -33,22 +36,22 @@ export default function Mentorship() {
           </div>
         </div>
 
-        <div className="px-16 w-[66.9rem] mx-auto mt-20">
+        <div className="px-16 w-[66.9rem] mx-auto mt-20 hidden md:block">
           <div className="flex justify-between self-stretch">
-            <h3 className="text-lg font-bold mt-1">Get Mentorship on:</h3>
+            <h3 className="text-base md:text-lg font-bold mt-1">
+              Get Mentorship on:
+            </h3>
             <div className="space-x-6 font-bold pb-11 border-b text-primary-main border-primary-main ">
               <span className="text-4xl">01.</span>
               <span className="text-3xl">Youtube</span>
             </div>
-
             <div className="space-x-6 font-bold">
               <span className="text-4xl">02.</span>
-              <span className="text-3xl">Youtube</span>
+              <span className="text-3xl">Tiktok</span>
             </div>
-
             <div className="space-x-6 font-bold">
               <span className="text-4xl">03.</span>
-              <span className="text-3xl">Youtube</span>
+              <span className="text-3xl">Streaming</span>
             </div>
           </div>
 
@@ -189,6 +192,10 @@ export default function Mentorship() {
               />
             </Link>
           </div>
+        </div>
+
+        <div className="block md:hidden">
+          <MobileMentorship />
         </div>
       </div>
     </div>

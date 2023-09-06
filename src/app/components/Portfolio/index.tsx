@@ -73,17 +73,17 @@ export default function Portfolio() {
   const [selected, setSelected] = useState(works[0].title);
 
   return (
-    <div className="lg:px-24 lg:py-40 relative">
+    <div className="px-4 md:px-8 py-20 lg:px-24 lg:py-32 relative">
       <div>
         <Title title="Portfolio" />
-        <h3 className="text-5xl font-bold">Some of my works</h3>
+        <h3 className="text-3xl md:text-5xl font-bold">Some of my works</h3>
       </div>
 
       <div className="relative z-10">
         <h3 className="text-lg font-normal leading-relaxed mb-10">
           Choose category here
         </h3>
-        <div className="tabs mt-6 relative">
+        {/* <div className="tabs mt-6 relative">
           {works.map((work, index) => (
             <div key={index}>
               <a
@@ -130,7 +130,7 @@ export default function Portfolio() {
               ))}
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="flex items-center justify-center mt-6 !z-20">
           <Link

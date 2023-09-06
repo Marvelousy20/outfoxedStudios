@@ -77,19 +77,21 @@ const trustees = [
 
 export default function Trustees() {
   return (
-    <div>
-      <div className="text-center">
-        <Title title="My Achievements" />
-        <div className="">
-          <h3 className="text-5xl font-bold max-w-lg mx-auto">
-            Trusted by creators and businesses
-          </h3>
-          <p className="text-lg text-offwhite leading-relaxed">
-            Numbers do not lie...
-          </p>
+    <div className="">
+      <div className="text-start md:text-center">
+        <div className="px-4">
+          <Title title="My Achievements" />
+          <div className="">
+            <h3 className="text-3xl md:text-5xl font-bold max-w-lg mx-auto">
+              Trusted by creators and businesses
+            </h3>
+            <p className="md:text-lg text-offwhite leading-relaxed">
+              Numbers do not lie...
+            </p>
+          </div>
         </div>
 
-        <div className="relative mt-16 as isolate aspect-[1.5] px-8 pb-8">
+        <div className="relative mt-12 md:mt-16 as isolate aspect-[1.5] md:px-8 pb-8">
           <Image
             fill
             placeholder="blur"
@@ -232,29 +234,32 @@ export default function Trustees() {
           </div>
 
           {/* conquer section */}
-          <div className="max-w-4xl z-10 mx-auto lg:mt-44 bg-neutral-900 bg-opacity-75 rounded-3xl backdrop-blur-xl lg:px-28 lg:py-24">
-            <Title title="Contact us" />
-            <h3 className="text-center text-4xl font-bold mb-2">
-              Conquer the content world and make your mark in your industry!
-            </h3>
-            <p className="text-lg font-normal leading-relaxed text-offwhite">
-              let us tailor a content solution that propels you towards success.
-            </p>
+          <div className="px-4 my-16 md:my-0 md:px-0">
+            <div className="md:max-w-4xl text-center z-10 mx-auto lg:mt-44 bg-neutral-900 bg-opacity-75 rounded-3xl backdrop-blur-xl lg:px-28 lg:py-24 py-10">
+              <Title title="Contact us" />
+              <h3 className="text-3xl md:text-4xl font-bold mb-2">
+                Conquer the content world and make your mark in your industry!
+              </h3>
+              <p className="text-base md:text-lg font-normal leading-relaxed text-offwhite">
+                let us tailor a content solution that propels you towards
+                success.
+              </p>
 
-            <Link
-              href="/"
-              className="inline-flex hover:shadow-hard gap-2 bg-primary-main px- py-3 rounded-lg mt-4 px-6 items-center hover:opacity-75 ease-in-out transition-all duration-300"
-            >
-              <span>Let&apos;s talk</span>
-              <div className="w-3.5 h-px border border-white"></div>
-              <span>contents</span>
-              <Image
-                src="/images/blast2.png"
-                alt="blast2"
-                width="26"
-                height="26"
-              />
-            </Link>
+              <Link
+                href="/"
+                className="inline-flex hover:shadow-hard gap-2 bg-primary-main px- py-3 rounded-lg mt-4 px-6 items-center hover:opacity-75 ease-in-out transition-all duration-300"
+              >
+                <span>Let&apos;s talk</span>
+                <div className="w-3.5 h-px border border-white"></div>
+                <span>contents</span>
+                <Image
+                  src="/images/blast2.png"
+                  alt="blast2"
+                  width="26"
+                  height="26"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ const lackFont = localFont({
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTop";
 
 export const metadata = {
   title: "Create Next App",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );

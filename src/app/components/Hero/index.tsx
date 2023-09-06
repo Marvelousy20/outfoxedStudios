@@ -25,28 +25,29 @@ export default function Hero() {
 
   return (
     <div className="">
-      <div className="absolute top-0">
+      <div className="absolute top-0 w-full">
         <Image
           src={Background}
           alt="background"
           width="1440"
           height="1140"
           placeholder="blur"
+          className="w-full"
         />
       </div>
 
-      <div className="lg:max-w-[55rem] relative mx-auto text-center pt-36 pb-24">
+      <div className="lg:max-w-[55rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0">
         <Title title="Welcome! Outfoxed studio crafts contents that SCALE" />
 
-        <div className="text-primary50 text-7xl font-bold mt-5">
-          <div className="inline-flex gap-12 relative">
+        <div className="text-primary50 text-4xl lg:text-5xl xl:text-7xl leading-[50px] font-bold mt-2 md:mt-5">
+          <div className="inline-flex xl:gap-12 relative">
             <h3>Blast off</h3>
 
-            <div className="icon-slider">
+            <div className="icon-slider hidden md:block h-[auto] md:h-[100px]">
               {icons.map((icon, index) => (
                 <div
                   key={index}
-                  className={`icon absolute -right-8 top-1 ${
+                  className={`icon absolute -right-10 md:-right-8 top-1 ${
                     index === currentIndex ? "active" : ""
                   }`}
                 >
@@ -56,6 +57,16 @@ export default function Hero() {
                     width="70"
                     height="70"
                     priority
+                    className="hidden md:block"
+                  />
+
+                  <Image
+                    src={icon}
+                    alt="blast"
+                    width="40"
+                    height="40"
+                    priority
+                    className="block md:hidden"
                   />
                 </div>
               ))}
@@ -65,13 +76,13 @@ export default function Hero() {
           <h3>to Content Excellence!</h3>
         </div>
 
-        <div className="text-center text-offwhite text-lg font-normal leading-relaxed lg:mt-4 lg:mb-12 lg:max-w-[50rem] mx-auto">
+        <div className="md:text-center text-offwhite text-base md:text-lg font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto">
           Whether you are a budding blogger, a thriving business, or an aspiring
           influencer, We are here to guide you towards content excellence and
           success in your industry.
         </div>
 
-        <button className="w-64 relative h-16 lg:mb-4 hover:opacity-75 ease-in-out transition-all duration-300 px-6 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex hover:shadow-hard">
+        <button className="md:w-64 w-56 relative md:h-16 mb-4 hover:opacity-75 ease-in-out transition-all duration-300 pr-4 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex hover:shadow-hard">
           Let&#39;s talk <div className="w-3.5 h-px border border-white"></div>
           <div className="text-white text-lg font-normal leading-relaxed">
             Contents
@@ -91,7 +102,7 @@ export default function Hero() {
         </button>
 
         <div>
-          <div className="icon-slider relative">
+          <div className="icon-slider relative text-start !justify-start md:!justify-center">
             {works.map((work, index) => (
               <div
                 key={index}
@@ -190,17 +201,17 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative mt-24">
+      <div className="relative mt-24 px-4 md:px-0">
         <div className="absolute inset-0 w-full">
           <img src="/images/line.png" alt="line" className="w-full h-full" />
         </div>
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-start md:text-center">
           <Title title="Who we are" />
           <div className="relative">
-            <div className="text-white text-[44px] font-bold">
+            <div className="text-white text-3xl md:text-5xl md:leading-[65px] font-bold mb-6">
               Your partner in Content Success and Business Growth...
             </div>
-            <div className="text-offset text-lg font-normal leading-[27px] mb-16 max-w-[514px] mx-auto">
+            <div className="text-offwhite text-base md:text-lg font-normal leading-[27px] mb-16 max-w-[514px] mx-auto">
               Outfoxed as an expert and experienced creator understands the
               challenges you face in today&#39;s competitive landscape. I am
               here to support, inspire, and collaborate with you, sharing in

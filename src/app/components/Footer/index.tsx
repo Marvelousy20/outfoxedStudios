@@ -1,16 +1,26 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
-    <div className="bg-background relative bottom-0">
+    <div className="bg-background relative bottom-0 px-4 md:px-0 pb-10">
       <div className="absolute inset-0">
         <img src="/images/line.png" alt="line" className="w-full h-full" />
       </div>
-      <div className="flex justify-center relative">
+      <div className="flex flex-col md:flex-row justify-center relative">
+        <Image
+          src="/images/logo.png"
+          alt="logo"
+          width="200"
+          height="80"
+          className="block md:hidden"
+        />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="490"
           height="195"
           viewBox="0 0 490 195"
           fill="none"
+          className="hidden md:block"
         >
           <path
             d="M385.09 0.00149868C383.424 -0.00910478 381.758 0.0365604 380.095 0.138416C366.953 0.949115 355.202 5.24371 348.91 13.6488C346.656 16.6595 347.204 20.828 349.795 23.083C352.388 25.3379 356.703 25.501 360.675 22.9268C367.533 18.4815 375.067 20.0528 379.973 24.78C384.879 29.5076 387.1 37.2267 382.237 46.1419C376.481 56.6939 372.413 75.0127 376.188 93.1402C379.962 111.268 392.092 129.099 418.142 136.91C428.194 139.923 441.81 141.939 454.667 139.211C468.031 136.573 483.447 128.775 486.762 120.262C483.985 122.93 480.925 124.808 477.694 126.204C483.19 119.923 487.223 111.272 488.74 99.7291L489.5 93.9521L484.599 97.1036C481.446 99.1319 478.418 101.128 475.564 102.627C476.356 100.864 477.076 98.6578 477.885 95.7882C474.553 100.349 470.759 103.401 466.295 105.238C463.523 105.087 460.784 103.777 457.525 100.405C454.114 96.8775 452.084 90.7679 450.78 83.09C449.476 75.4117 448.84 66.2974 447.577 57.0044C445.049 38.4178 439.796 18.6094 420.632 8.65225C409.535 2.88728 396.884 0.0723597 385.09 0.00149868ZM385.053 5.40916C396.001 5.48572 407.905 8.131 418.14 13.4483C435.073 22.2459 439.757 39.6128 442.222 57.7328C443.454 66.7931 444.079 75.9147 445.452 83.9949C445.847 86.3228 446.303 88.5715 446.861 90.7162C442.223 90.7282 438.678 88.222 434.339 83.2947C436.557 92.4256 437.939 94.2644 442.057 99.9741C433.584 97.5015 423.85 89.5431 417.751 80.7386C416.768 92.7631 423.824 102.229 427.743 105.939C420.183 101.677 409.513 93.4678 402.334 79.3199C402.029 91.7584 405.916 105.662 413.278 114.29C402.915 110.826 393.77 84.4222 387.63 75.9666C383.715 85.9403 386.745 102.715 392.456 115.037C386.562 108.18 383.182 100.212 381.48 92.0383C378.02 75.4213 382.005 57.8547 386.982 48.7296C392.852 37.9677 390.259 27.186 383.724 20.8878C377.188 14.5896 366.653 12.6115 357.736 18.3911C355.165 20.0576 353.926 19.5117 353.344 19.0052C352.762 18.4986 352.515 17.8522 353.237 16.8874C358.073 10.4277 368.291 6.28111 380.429 5.53256C381.946 5.43888 383.489 5.39835 385.053 5.40916Z"
@@ -75,19 +85,25 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="flex justify-around items-center mt-20 relative">
+      <div className="md:flex flex-col md:flex-row justify-around items-center mt-20 relative">
         <div className="grid text-primary50">
           <a href="mailto:hello@outfoxed.com">hello@outfoxed.com</a>
           <br />
 
-          <div className="gap-6 inline-flex">
-            <a href="#linkedIn">LinkedIn</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#instagram">Instagram</a>
+          <div className="space-y-8 md:gap-6 md:inline-flex">
+            <div>
+              <a href="#linkedIn">LinkedIn</a>
+            </div>
+            <div>
+              <a href="#twitter">Twitter</a>
+            </div>
+            <div>
+              <a href="#instagram">Instagram</a>
+            </div>
           </div>
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <ul className="flex gap-16">
             <li>
               <a href="/">Home</a>
