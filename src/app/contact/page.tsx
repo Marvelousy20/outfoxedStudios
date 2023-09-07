@@ -10,7 +10,7 @@ export default function Contact() {
         <Image
           src={Moon2}
           alt=""
-          className="absolute top-0 -z-10 object-cover bg-neutral-900 opacity-20"
+          className="absolute top-0 -z-10 object-cover bg-neutral-900 opacity-10"
           priority
         />
         <div className="bg-blend-hard-light mix-blend-hard absolute inset-0 bg-gradient-to-b from-[rgba(13,22,27,0.30)] to-[rgba(13,22,27,0.30)]" />

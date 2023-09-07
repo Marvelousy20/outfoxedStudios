@@ -39,7 +39,8 @@ export default function Navbar() {
     }
   });
 
-  const matches = useMediaQuery("(min-width: 1280px)");
+  // large screen sizes uses default
+  const matches = useMediaQuery("(min-width: 1024px)");
 
   const scrollToSection = (sectionId: string) => {
     const section = document.querySelector(sectionId);
@@ -110,19 +111,19 @@ export default function Navbar() {
           initial="hidden"
           className="flex flex-col items-center justify-center space-y-12 w-full fixed top-0 left-0 h-screen bg-background text-white"
         >
-          <motion.li variants={itemMotion}>
+          <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="/">Home</Link>
           </motion.li>
-          <motion.li variants={itemMotion}>
+          <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="#services">Services</Link>
           </motion.li>
-          <motion.li variants={itemMotion}>
+          <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="/about">About</Link>
           </motion.li>
-          <motion.li variants={itemMotion}>
+          <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="/works">Works</Link>
           </motion.li>
-          <motion.li variants={itemMotion}>
+          <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="/contact">Contact Us</Link>
           </motion.li>
         </motion.ul>

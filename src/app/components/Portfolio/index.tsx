@@ -4,70 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Title from "../Title";
-import brandVideo from "../../../../public/images/brandVideo.png";
-import brandVideo2 from "../../../../public/images/brand2.png";
 import Background2 from "../../../../public/images/bacground2.png";
 import Mentorship from "../Mentorship";
 import Accomplishment from "../Accomplishment";
-
-const works = [
-  {
-    title: "Video Editing",
-    data: [
-      {
-        course: "Tyler Branding Video",
-        description: "Video 1",
-        img: brandVideo,
-      },
-
-      {
-        course: "Mac Branding Video",
-        description: "Video 2",
-        img: brandVideo2,
-      },
-    ],
-  },
-
-  {
-    title: "Graphic Design",
-    data: [
-      {
-        course: "Tyler Graphic Design",
-        description: "Video 1",
-        img: brandVideo2,
-      },
-
-      {
-        course: "Mac Graphic Design",
-        description: "Video 2",
-        img: brandVideo2,
-      },
-    ],
-  },
-
-  {
-    title: "Animation",
-    data: [
-      {
-        course: "Tyler Animation Video",
-        description: "Video 1",
-        img: brandVideo,
-      },
-
-      {
-        course: "Mac Video",
-        description: "Video 2",
-        img: brandVideo,
-      },
-
-      {
-        course: "Mac Video",
-        description: "Video 3",
-        img: brandVideo,
-      },
-    ],
-  },
-];
+import { works } from "../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState(works[0].title);
