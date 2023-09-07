@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function Accomplishment() {
   return (
-    <div className="pt-16 lg:mx-24">
+    <div className="pt-16 xl:mx-24">
       <div className="bg-white text-black flex flex-col md:flex-row items-center justify-around py-16 rounded-t-lg space-y-12 md:space-y-0">
         <div className="text-zinc-600 font-bold text-lg">
-          Accomplished <br className="hidden md:block" /> so far:
+          Accomplished <br className="hidden lg:block" /> so far:
         </div>
         <div>
           <sup className="text-primary50 text-lg font-normal leading-relaxed">
             Over
           </sup>
-          <span className="text-primary-main text-3xl lg:text-4xl font-bold">
+          <span className="text-primary-main text-3xl md:text-2xl lg:text-4xl font-bold">
             1 billion
           </span>
           <span className="block text-zinc-600 text-lg font-normal leading-relaxed text-center">
@@ -23,7 +23,7 @@ export default function Accomplishment() {
           <sup className="text-primary50 text-lg font-normal leading-relaxed">
             Over
           </sup>
-          <span className="text-primary-main text-3xl lg:text-4xl font-bold">
+          <span className="text-primary-main text-3xl md:text-2xl lg:text-4xl font-bold">
             1 billion
           </span>
           <span className="block text-zinc-600 text-lg font-normal leading-relaxed text-center">
@@ -34,7 +34,7 @@ export default function Accomplishment() {
           <sup className="text-primary50 text-lg font-normal leading-relaxed">
             Over
           </sup>
-          <span className="text-primary-main text-3xl lg:text-4xl font-bold">
+          <span className="text-primary-main text-3xl md:text-2xl lg:text-4xl font-bold">
             40+ multiple
           </span>
           <span className="block text-zinc-600 text-lg font-normal leading-relaxed text-center">
@@ -44,7 +44,7 @@ export default function Accomplishment() {
       </div>
 
       {/* container for three cards */}
-      <div className="bg-card px-4 md:px-16 lg:px-24 py-12 md:py-6 rounded-b-lg flex flex-col md:flex-row justify-between items-center">
+      <div className="bg-card px-4 md:px-8 lg:px-12 xl:px-24 py-12 md:py-6 rounded-b-lg flex flex-col md:flex-row justify-between items-center">
         {/* First card */}
         <div className="w-full md:w-auto">
           <h3>Live Feed</h3>
@@ -267,12 +267,12 @@ export default function Accomplishment() {
 
         {/* Third card */}
         <div className="mt-12 md:mt-0">
-          <h1 className="font-semibold text-2xl leading-relaxed">
+          <h1 className="font-semibold text-2xl md:text-lg lg:text-2xl leading-relaxed">
             Want to learn how to <br /> achieve this?
           </h1>
           <Link
             href="/"
-            className="flex items-center gap-2 bg-primary-main px-6 py-3 rounded-lg mt-4 hover:opacity-75 ease-in-out transition-all duration-300"
+            className="flex items-center gap-2 bg-primary-main px-6 py-3 md:px-4 lg:px-6 rounded-lg mt-4 hover:opacity-75 ease-in-out transition-all duration-300"
           >
             <span>Get Mentored by me</span>
             <Image
