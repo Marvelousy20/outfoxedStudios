@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Title from "../Title";
 import MobileService from "./mobileServeice";
+import B2 from "../../../../public/images/b2.png";
 
 const services = [
   {
@@ -75,8 +76,18 @@ const services = [
 export default function Services() {
   const [selected, setSelected] = useState(services[0].title);
   return (
-    <div className="pt-20 lg:pt-44 lg:px-28 px-4" id="services">
-      <div className="text-start md:text-center">
+    <div className="pt-20 lg:pt-44 lg:px-28 px-4 relative" id="services">
+      <div className="absolute top-0 inset-0 w-full">
+        <Image
+          src={B2}
+          alt="background"
+          width="1440"
+          height="1140"
+          placeholder="blur"
+          className="w-full"
+        />
+      </div>
+      <div className="text-start md:text-center relative">
         <Title title="How I help you" />
         <div className="inline-flex">
           <h3 className="text-3xl md:text-5xl md:leading-[65px] font-bold">
@@ -84,7 +95,7 @@ export default function Services() {
           </h3>
         </div>
 
-        <div className="text-offwhite text-base md:text-lg font-normal leading-relaxed">
+        <div className="text-offwhite text-base md:text-lg font-normal leading-relaxed relative">
           <div className="relative inline-block">
             <div>Your one stop shop for all things content creation</div>
             <div className="absolute right-0 md:-right-16 top-0">
@@ -106,7 +117,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="hidden lg:block mt-20">
+      <div className="hidden lg:block mt-20 relative">
         <div className="grid grid-cols-5 gap-x-20">
           <div className="col-span-2 tabs items-start flex-col text-start space-y-12">
             {services.map((service, index) => (
@@ -165,7 +176,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="block lg:hidden">
+      <div className="block lg:hidden relative">
         <MobileService />
       </div>
     </div>

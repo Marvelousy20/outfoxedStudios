@@ -55,7 +55,11 @@ export default function Navbar() {
       } h-[110px] px-8 md:px-16 lg:px-24 text-lg text-white z-20 sticky top-0 flex items-center justify-between`}
     >
       <div className="z-20">
-        <Image src="/images/logo.png" alt="logo" width="156" height="62" />
+        <a href="/" className="font-bold text-2xl md:text-3xl">
+          {/* <Image src="/images/logo2.png" alt="logo" width="156" height="62" /> */}
+          <span className="font-sans">Outfoxed</span>
+          <span className="text-primary-main">Studio</span>
+        </a>
       </div>
       {matches && (
         <ul className={`flex items-center space-x-12 h-full px-12`}>

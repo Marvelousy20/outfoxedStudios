@@ -9,10 +9,10 @@ export default function Mentorship() {
   const [selected, setSelected] = useState(data[0].title);
 
   return (
-    <div className="relative text-start md:text-center pt-[12rem]">
+    <div className="relative text-start md:text-center pt-16 md:pt-24 lg:pt-32 overflow-hidden">
       <div className="">
         <Title title="Get mentored" />
-        <div className="inline-flex">
+        <div className="">
           <h3 className="text-3xl md:text-5xl font-bold">
             Mentorship/Coaching
           </h3>

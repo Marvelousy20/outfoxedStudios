@@ -13,7 +13,7 @@ export default function Portfolio() {
   const [selected, setSelected] = useState(works[0].title);
 
   return (
-    <div className="px-4 md:px-8 py-20 lg:px-24 lg:py-32 relative">
+    <div className="px-4 md:px-8 py-20 lg:px-24 relative">
       <div>
         <Title title="Portfolio" />
         <h3 className="text-3xl md:text-5xl font-bold">Some of my works</h3>

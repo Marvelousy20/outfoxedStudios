@@ -1,8 +1,7 @@
 import Title from "../Title";
 import Image from "next/image";
-import Moon from "../../../../public/images/Moon.png";
-import Link from "next/link";
 import HomeContact from "../ContactCard/homeContact";
+import B2 from "../../../../public/images/b2.png";
 
 const trustees = [
   {
@@ -78,8 +77,18 @@ const trustees = [
 
 export default function Trustees() {
   return (
-    <div className="">
-      <div className="text-start md:text-center">
+    <div className="relative md:pt-20 lg:pt-32">
+      <div className="absolute top-0 w-full">
+        <Image
+          src={B2}
+          alt="background"
+          width="1440"
+          height="1140"
+          placeholder="blur"
+          className="w-full"
+        />
+      </div>
+      <div className="text-start md:text-center relative">
         <div className="px-4">
           <Title title="My Achievements" />
           <div className="">
@@ -93,14 +102,6 @@ export default function Trustees() {
         </div>
 
         <div className="relative mt-12 md:mt-16 as isolate aspect-[1.5] md:px-8 pb-8">
-          <Image
-            fill
-            placeholder="blur"
-            src={Moon}
-            alt=""
-            className=" !top-16 -z-10 object-cover bg-neutral-900 mix-blend-hard-light"
-          />
-          <div className="bg-blend-hard-light mix-blend-hard absolute inset-0 bg-gradient-to-b from-[rgba(13,22,27,0.30)] to-[rgba(13,22,27,0.30)]" />
           <div className="z-10 text-white relative">
             <div className="carousel carousel-center max-w-full p-4 space-x-4">
               {trustees.map((trustee, i) => (
