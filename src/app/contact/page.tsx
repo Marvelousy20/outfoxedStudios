@@ -17,7 +17,7 @@ export default function Contact() {
       </div>
       <div className="text-white max-w-5xl mx-auto text-start md:text-center relative z-10 pb-24">
         <Title title="Let's talk" />
-        <div className="text-5xl lg:text-7xl font-bold mt-5">
+        <div className="text-5xl lg:text-7xl font-bold mt-5 text-primary50">
           <div className="inline-flex gap-4">
             <h3>Talk to us</h3>
             <span>
