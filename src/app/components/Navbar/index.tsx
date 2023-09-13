@@ -56,7 +56,6 @@ export default function Navbar() {
     >
       <div className="z-20">
         <a href="/" className="font-bold text-2xl md:text-3xl">
-          {/* <Image src="/images/logo2.png" alt="logo" width="156" height="62" /> */}
           <span className="font-sans">Outfoxed</span>
           <span className="text-primary-main">Studio</span>
         </a>
@@ -68,7 +67,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="#services">Services</Link>
+            <Link href="/#services">Services</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
@@ -119,7 +118,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </motion.li>
           <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
-            <Link href="#services">Services</Link>
+            <Link href="/#services">Services</Link>
           </motion.li>
           <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="/about">About</Link>
