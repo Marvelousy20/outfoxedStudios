@@ -9,24 +9,24 @@ import blastblue from "../../../../public/images/blastblue.png";
 import rocket from "../../../../public/images/rocket.png";
 import { motion } from "framer-motion";
 
-const textNavigation = {
-  visible: {
-    opacity: 1,
-    transition: {
-      when: "beforeChildren",
-      staggerChildren: 0.3,
-    },
-  },
+// const textNavigation = {
+//   visible: {
+//     opacity: 1,
+//     transition: {
+//       when: "beforeChildren",
+//       staggerChildren: 0.3,
+//     },
+//   },
 
-  hidden: {
-    opacity: 0,
-  },
-};
+//   hidden: {
+//     opacity: 0,
+//   },
+// };
 
-const itemMotion = {
-  visible: { opacity: 1, x: 0 },
-  hidden: { opacity: 0, x: -100 },
-};
+// const itemMotion = {
+//   visible: { opacity: 1, x: 0 },
+//   hidden: { opacity: 0, x: -100 },
+// };
 
 export default function Hero() {
   const icons = [blast, blastblue, rocket];
@@ -56,16 +56,14 @@ export default function Hero() {
         />
       </div>
 
-      <motion.div
-        variants={textNavigation}
-        animate="visible"
-        initial="hidden"
-        transition={{ duration: 1 }}
-        className="lg:max-w-[55rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0"
-      >
+      <div className="lg:max-w-[55rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0">
         <Title title="Welcome! Outfoxed studio crafts contents that SCALE" />
 
-        <motion.div className="text-primary50 text-5xl xl:text-7xl leading-[50px] font-bold mt-2 md:mt-5">
+        <div
+          className="text-primary50 text-5xl xl:text-7xl leading-[50px] font-bold mt-2 md:mt-5"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <div className="inline-flex xl:gap-12 relative">
             <h3>Blast off</h3>
 
@@ -100,16 +98,18 @@ export default function Hero() {
           </div>
 
           <h3>to Content Excellence!</h3>
-        </motion.div>
+        </div>
 
-        <motion.div
-          variants={itemMotion}
+        <div
           className="md:text-center text-offwhite text-base md:text-lg font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
         >
           Whether you are a budding blogger, a thriving business, or an aspiring
           influencer, We are here to guide you towards content excellence and
           success in your industry.
-        </motion.div>
+        </div>
 
         <button className="md:w-64 w-56 relative md:h-16 mb-4 hover:opacity-75 ease-in-out transition-all duration-300 pr-4 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex hover:shadow-hard">
           Let&#39;s talk <div className="w-3.5 h-px border border-white"></div>
@@ -130,7 +130,7 @@ export default function Hero() {
           </div>
         </button>
 
-        <motion.div variants={itemMotion}>
+        <div>
           <div className="icon-slider relative text-start !justify-start md:!justify-center">
             {works.map((work, index) => (
               <div
@@ -143,8 +143,8 @@ export default function Hero() {
               </div>
             ))}
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
 
       <div className="carousel w-full">
         <div
@@ -234,13 +234,25 @@ export default function Hero() {
         <div className="absolute inset-0 w-full">
           <img src="/images/line.png" alt="line" className="w-full h-full" />
         </div>
-        <div className="max-w-3xl mx-auto text-start md:text-center">
+        <div
+          className="max-w-3xl mx-auto text-start md:text-center"
+          data-aos="flip-right"
+          data-aos-duration="1500"
+        >
           <Title title="Who we are" />
           <div className="relative">
-            <div className="text-white text-3xl md:text-5xl md:leading-[65px] font-bold mb-6">
+            <div
+              className="text-white text-3xl md:text-5xl md:leading-[65px] font-bold mb-6"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+            >
               Your partner in Content Success and Business Growth...
             </div>
-            <div className="text-offwhite text-base md:text-lg font-normal leading-[27px] mb-16 max-w-[514px] mx-auto">
+            <div
+              className="text-offwhite text-base md:text-lg font-normal leading-[27px] mb-16 max-w-[514px] mx-auto"
+              data-aos="flip-left"
+            >
               Outfoxed as an expert and experienced creator understands the
               challenges you face in today&#39;s competitive landscape. I am
               here to support, inspire, and collaborate with you, sharing in

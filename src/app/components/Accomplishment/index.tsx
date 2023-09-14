@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Accomplishment() {
   return (
-    <div className="pt-16 xl:mx-24">
+    <div className="pt-16 xl:mx-24" data-aos="zoom-in" data-aos-duration="1500">
       <div className="bg-white text-black flex flex-col md:flex-row items-center justify-around py-16 rounded-t-lg space-y-12 md:space-y-0">
         <div className="text-zinc-600 font-bold text-lg">
           Accomplished <br className="hidden lg:block" /> so far:
@@ -271,7 +271,7 @@ export default function Accomplishment() {
             Want to learn how to <br /> achieve this?
           </h1>
           <Link
-            href="/"
+            href="/contact"
             className="flex items-center gap-2 bg-primary-main px-6 py-3 md:px-4 lg:px-6 rounded-lg mt-4 hover:opacity-75 ease-in-out transition-all duration-300"
           >
             <span>Get Mentored by me</span>

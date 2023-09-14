@@ -2,6 +2,7 @@ import "./globals.css";
 import { Red_Hat_Display } from "next/font/google";
 import localFont from "next/font/local";
 import dynamic from "next/dynamic";
+import "aos/dist/aos.css";
 const Navbar = dynamic(() => import("../app/components/Navbar"), {
   ssr: false,
 });

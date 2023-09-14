@@ -1,10 +1,19 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import Title from "../components/Title";
 import contactImage from "../../../public/images/Contact.png";
 import ContactCard from "../components/ContactCard";
 import B3 from "../../../public/images/b3.png";
+import AOS from "aos";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <div className="text-white bg-background pb-24">
       <div className="h-screen absolute w-full top-0">
@@ -23,7 +32,10 @@ export default function About() {
         <div className="flex flex-col pt-16 md:pt-24 lg:pt-32 text-start md:text-center">
           <Title title="Who we are" />
           <div className=" text-4xl xl:text-7xl leading-[60px] font-bold md:mt-5 text-primary-main">
-            <div className="inline-flex items-center space-x-4">
+            <div
+              className="inline-flex items-center space-x-4"
+              data-aos="fade-up"
+            >
               <h3>Yes, This is</h3>
               <span>
                 <Image
@@ -36,7 +48,7 @@ export default function About() {
               </span>
             </div>
 
-            <h3>OutFoxed Studio</h3>
+            <h3 data-aos="fade-up">OutFoxed Studio</h3>
 
             <p className="text-offwhite text-base md:mt-6 font-normal">
               And we are transforming your brand one
@@ -48,7 +60,10 @@ export default function About() {
             <div className="pt-20 md:pt-32 lg:pt-40 max-w-2xl mx-auto text-start space-y-16 relative">
               <div className="relative">
                 <Title title="Who we are" />
-                <p className="text-lg text-offwhite font-normal leading-relaxed">
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
                   Welcome to OutfoxedStudios, your trusted partner for
                   professional video editing services! With over a decade of
                   experience in the world of content creation and video editing,
@@ -59,7 +74,10 @@ export default function About() {
 
               <div className="relative">
                 <Title title="Meet Our Founder" />
-                <p className="text-lg text-offwhite font-normal leading-relaxed">
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
                   Our journey began with Outfoxedgaming, a seasoned YouTuber
                   with a thriving channel boasting 1.2 million subscribers and a
                   remarkable 1 billion views. Outfoxed has been a passionate
@@ -71,7 +89,10 @@ export default function About() {
 
               <div className="relative">
                 <Title title="Our Impact" />
-                <p className="text-lg text-offwhite font-normal leading-relaxed">
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
                   But our story doesn&apos;t end there. Outfoxed has also
                   leveraged their expertise to assist numerous content creators
                   in achieving a collective viewership of over 5 billion views!
@@ -84,7 +105,7 @@ export default function About() {
               <div>
                 <Title title="A Decade of Editing Excellence" />
                 {/* <h1 className="text-4xl font-bold mb-4">Our Mission</h1> */}
-                <p className="text-offwhite">
+                <p className="text-offwhite" data-aos="fade in">
                   With a decade of experience under our belt, our team brings
                   unparalleled expertise to every project. We&apos;ve honed our
                   skills over the years, staying ahead of industry trends and
@@ -97,7 +118,7 @@ export default function About() {
 
               <div>
                 <Title title="Why Choose Us" />
-                <div className="text-offwhite">
+                <div className="text-offwhite" data-aos="fade in">
                   <div className="space-y-4">
                     <div className="space-x-1">
                       <span className="text-2xl text-primary-main font-semibold">

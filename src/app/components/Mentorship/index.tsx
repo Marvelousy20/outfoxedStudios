@@ -12,7 +12,7 @@ export default function Mentorship() {
     <div className="relative text-start md:text-center pt-16 md:pt-24 lg:pt-32 overflow-hidden">
       <div className="">
         <Title title="Get mentored" />
-        <div className="">
+        <div data-aos="fade-up">
           <h3 className="text-3xl md:text-5xl font-bold">
             Mentorship/Coaching
           </h3>
@@ -20,7 +20,9 @@ export default function Mentorship() {
 
         <div className="text-offwhite text-base md:text-lg font-normal leading-relaxed">
           <div className="relative inline-block">
-            <div>My content knowledge to help you scale</div>
+            <div data-aos="fade-up" data-aos-delay="150">
+              My content knowledge to help you scale
+            </div>
             <div className="absolute -right-16 top-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +41,11 @@ export default function Mentorship() {
           </div>
         </div>
 
-        <div className="lg:px-4 mt-20 hidden max-w-[68rem] mx-auto lg:flex justify-between mb-20">
+        <div
+          className="lg:px-4 mt-20 hidden max-w-[68rem] mx-auto lg:flex justify-between mb-20"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <h3 className="text-base md:text-lg font-bold mt-1 text-offwhite text-start mb-6">
             Get Mentorship on:
           </h3>
@@ -90,7 +96,11 @@ export default function Mentorship() {
           </div>
         </div>
 
-        <div className="block lg:hidden">
+        <div
+          className="block lg:hidden"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <MobileMentorship />
         </div>
       </div>

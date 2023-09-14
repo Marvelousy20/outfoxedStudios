@@ -16,14 +16,20 @@ export default function Portfolio() {
     <div className="px-4 md:px-8 py-20 lg:px-24 relative">
       <div>
         <Title title="Portfolio" />
-        <h3 className="text-3xl md:text-5xl font-bold">Some of my works</h3>
+        <h3 className="text-3xl md:text-5xl font-bold" data-aos="fade-up">
+          Some of my works
+        </h3>
       </div>
 
       <div className="relative z-10">
-        <h3 className="text-lg font-normal leading-relaxed mb-10">
+        <h3
+          className="text-lg font-normal leading-relaxed mb-10"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           Choose category here
         </h3>
-        <div className="tabs mt-6 relative">
+        <div className="tabs mt-6 relative" data-aos="fade-up">
           {works.map((work, index) => (
             <div key={index}>
               <a
@@ -40,7 +46,11 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <div className="relative z-10 mt-10">
+        <div
+          className="relative z-10 mt-10"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
           {works.map((work, index) => (
             <div
               key={index}
@@ -76,7 +86,7 @@ export default function Portfolio() {
 
         <div className="flex items-center justify-center mt-6 !z-20">
           <Link
-            href="/"
+            href="/works"
             className="flex hover:shadow-hard items-center gap-2 bg-primary-main px-6 py-3 rounded-lg hover:opacity-75 ease-in-out transition-all duration-300"
           >
             <span>More Works</span>

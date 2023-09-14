@@ -92,10 +92,17 @@ export default function Trustees() {
         <div className="px-4">
           <Title title="My Achievements" />
           <div className="">
-            <h3 className="text-3xl md:text-5xl font-bold max-w-lg mx-auto">
+            <h3
+              className="text-3xl md:text-5xl font-bold max-w-lg mx-auto"
+              data-aos="fade-up"
+            >
               Trusted by creators and businesses
             </h3>
-            <p className="md:text-lg text-offwhite leading-relaxed">
+            <p
+              className="md:text-lg text-offwhite leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               Numbers do not lie...
             </p>
           </div>
