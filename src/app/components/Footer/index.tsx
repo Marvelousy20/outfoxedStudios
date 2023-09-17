@@ -9,13 +9,13 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-center relative">
         <div className="text-5xl md:text-6xl xl:text-8xl font-bold font-sans text-center">
           <span className="text-white">Outfoxed</span> <br />
-          <span className="text-primary-main">Studios</span>
+          <span className="text-primary-main">Productions</span>
         </div>
       </div>
 
       <div className="md:flex flex-col md:flex-row justify-around items-center mt-20 relative">
         <div className="grid text-primary50">
-          <a href="mailto:hello@outfoxed.com">hello@outfoxed.com</a>
+          <a href="mailto:hello@outfoxed.com">hello@outfoxedproduction.com</a>
           <br />
 
           <div className="space-y-8 md:space-y-0 md:gap-6 md:inline-flex">

@@ -57,7 +57,7 @@ export default function Navbar() {
       <div className="z-20">
         <a href="/" className="font-bold text-2xl md:text-3xl">
           <span className="font-sans">Outfoxed</span>
-          <span className="text-primary-main">Studio</span>
+          <span className="text-primary-main">Production</span>
         </a>
       </div>
       {matches && (
