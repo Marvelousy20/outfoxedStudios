@@ -1,32 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import Background from "../../../../public/images/background.png";
-import Title from "../Title";
+import Background from "../../../../public/images/bg.png";
 import blast from "../../../../public/images/blast.png";
 import blastblue from "../../../../public/images/blastblue.png";
 import rocket from "../../../../public/images/rocket.png";
-import { motion } from "framer-motion";
-
-// const textNavigation = {
-//   visible: {
-//     opacity: 1,
-//     transition: {
-//       when: "beforeChildren",
-//       staggerChildren: 0.3,
-//     },
-//   },
-
-//   hidden: {
-//     opacity: 0,
-//   },
-// };
-
-// const itemMotion = {
-//   visible: { opacity: 1, x: 0 },
-//   hidden: { opacity: 0, x: -100 },
-// };
 
 export default function Hero() {
   const icons = [blast, blastblue, rocket];
@@ -56,11 +34,13 @@ export default function Hero() {
         />
       </div>
 
-      <div className="lg:max-w-[55rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0">
-        <Title title="Welcome! Outfoxed studio crafts contents that SCALE" />
+      <div className="lg:max-w-[70rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0">
+        <div className="text-offwhite">
+          Welcome! Outfoxed productions crafts contents that SCALE
+        </div>
 
         <div
-          className="text-primary50 text-5xl xl:text-7xl leading-[50px] font-bold mt-2 md:mt-5"
+          className="text-primary50 text-6xl xl:text-8xl leading-[50px] font-bold mt-2 md:mt-5"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -101,7 +81,7 @@ export default function Hero() {
         </div>
 
         <div
-          className="md:text-center text-offwhite text-base md:text-lg font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
+          className="md:text-center text-offwhite text-lg md:text-xl font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="500"
@@ -111,7 +91,10 @@ export default function Hero() {
           success in your industry.
         </div>
 
-        <button className="md:w-64 w-56 relative md:h-16 mb-4 hover:opacity-75 ease-in-out transition-all duration-300 pr-4 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex hover:shadow-hard">
+        <a
+          href="/contact"
+          className="md:w-64 w-56 relative md:h-16 mb-4 hover:opacity-75 ease-in-out transition-all duration-300 pr-4 py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex hover:shadow-hard"
+        >
           Let&#39;s talk <div className="w-3.5 h-px border border-white"></div>
           <div className="text-white text-lg font-normal leading-relaxed">
             Contents
@@ -128,7 +111,7 @@ export default function Hero() {
               </div>
             ))}
           </div>
-        </button>
+        </a>
 
         <div>
           <div className="icon-slider relative text-start !justify-start md:!justify-center">
@@ -139,7 +122,7 @@ export default function Hero() {
                   index === currentIndex ? "active" : ""
                 }`}
               >
-                We create <span className="text-red">{work}</span> contents
+                We create <span className="text-red">{work}</span> content
               </div>
             ))}
           </div>
@@ -230,7 +213,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative mt-24 px-4 md:px-0">
+      {/* <div className="relative mt-24 px-4 md:px-0">
         <div className="absolute inset-0 w-full">
           <img src="/images/line.png" alt="line" className="w-full h-full" />
         </div>
@@ -283,7 +266,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

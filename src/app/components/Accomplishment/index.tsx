@@ -48,7 +48,7 @@ export default function Accomplishment() {
         {/* First card */}
         <div className="w-full md:w-auto">
           <h3>Live Feed</h3>
-          <div className="px-4 py-6 bg-gray-950 bg-opacity-80 space-y-6 rounded-3xl backdrop-blur-xl flex-col justify-start items-start gap-6 md:inline-flex">
+          <div className="px-4 py-6 bg-gray-950 bg-opacity-80 space-y-6 md:space-y-0 rounded-3xl backdrop-blur-xl flex-col justify-start items-start gap-6 md:inline-flex">
             <p>My channel</p>
 
             <div className="flex items-center gap-4">
@@ -82,7 +82,7 @@ export default function Accomplishment() {
               </svg>
 
               <span>
-                Outfoxed Studio <br /> (@outfoxed)
+                Outfoxed Productions <br /> (@outfoxed)
               </span>
             </div>
 
@@ -157,7 +157,7 @@ export default function Accomplishment() {
         {/* Second card */}
         <div className="w-full md:w-auto">
           <h3 className="invisible">hello</h3>
-          <div className="px-4 py-6 bg-gray-950 bg-opacity-80 space-y-6 rounded-3xl backdrop-blur-xl md:flex-col md:justify-start items-start gap-6 md:inline-flex">
+          <div className="px-4 py-6 bg-gray-950 bg-opacity-80 space-y-6 md:space-y-0 rounded-3xl backdrop-blur-xl md:flex-col md:justify-start items-start gap-6 md:inline-flex">
             <p>
               My Clients <span className="text-[#009FF5]">(40+)</span>
             </p>
@@ -193,7 +193,7 @@ export default function Accomplishment() {
               </svg>
 
               <span>
-                Outfoxed Studio <br /> (@outfoxed)
+                Outfoxed Productions <br /> (@outfoxed)
               </span>
             </div>
 

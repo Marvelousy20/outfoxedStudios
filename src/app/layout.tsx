@@ -19,7 +19,7 @@ import ScrollToTopButton from "./components/ScrollToTop";
 export const metadata = {
   title: "Outfoxed Productions",
   description:
-    "Welcome to OutfoxedStudios, your trusted partner for professional video editing services",
+    "Welcome to OutfoxedProductions, your trusted partner for professional video editing services",
 };
 
 export default function RootLayout({
