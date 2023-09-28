@@ -30,14 +30,13 @@ export default function About() {
       </div>
       <div className="relative px-4">
         <div className="flex flex-col pt-16 md:pt-24 lg:pt-32 text-start md:text-center">
-          <Title title="Who we are" />
           <div className=" text-4xl xl:text-7xl leading-[60px] font-bold md:mt-5 text-primary-main">
             <div
               className="inline-flex items-center space-x-4"
               data-aos="fade-up"
             >
-              <h3>Yes, This is</h3>
-              <span>
+              <h3>Welcome to</h3>
+              {/* <span>
                 <Image
                   src="/images/logo.png"
                   alt="outfoxed"
@@ -45,10 +44,10 @@ export default function About() {
                   height="130"
                   priority
                 />
-              </span>
+              </span> */}
             </div>
 
-            <h3 data-aos="fade-up">OutFoxed Studio</h3>
+            <h3 data-aos="fade-up">OutFoxed Productions</h3>
 
             <p className="text-offwhite text-base md:mt-6 font-normal">
               And we are transforming your brand one
@@ -73,7 +72,7 @@ export default function About() {
               </div>
 
               <div className="relative">
-                <Title title="Meet Our Founder" />
+                <Title title="Meet Our Founders" />
                 <p
                   className="text-lg text-offwhite font-normal leading-relaxed"
                   data-aos="fade in"

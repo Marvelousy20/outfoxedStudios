@@ -42,7 +42,7 @@ export default function Contact() {
 
           <h3 className="">Get the help you need</h3>
           <p className="text-sm text-offwhite mt-4">
-            Take your brand to the next level, by hiring me!
+            Take your brand to the next level, by hiring us!
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function Contact() {
         </div>
         <form
           action=""
-          className="grid gap-y-8 pb-12 max-w-[48.75rem] mx-auto relative"
+          className="grid gap-y-8 pb-12 max-w-[48.75rem] mx-auto relative text-white"
         >
           <h3 className="text-2xl md:text-4xl font-bold text-white">
             Say Hello to Outfoxed Productions
