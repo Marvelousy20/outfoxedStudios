@@ -8,9 +8,36 @@ import Background2 from "../../../../public/images/bacground2.png";
 import Mentorship from "../Mentorship";
 import Accomplishment from "../Accomplishment";
 import { works } from "../data";
+import YouTube, { YouTubeProps } from "react-youtube";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState(works[0].title);
+  const [isPlay, setIsPlaying] = useState(false);
+
+  const onPlay = () => {
+    // Stop any other video that is currently playing
+    // Only allow one video to play at a time
+    setIsPlaying(true);
+  };
+
+  const onPause = () => {
+    setIsPlaying(false);
+  };
+
+  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  };
+
+  const opts = {
+    height: "300",
+    width: "508",
+  };
+
+  const mobileOpts = {
+    height: "350",
+    width: "350",
+  };
 
   return (
     <div className="px-4 md:px-8 py-20 lg:px-24 relative">
@@ -62,21 +89,24 @@ export default function Portfolio() {
             >
               {work.data.map((data, i) => (
                 <div key={i} className="">
-                  <div>
-                    <Image
-                      src={data.img}
-                      alt="img"
-                      width="608"
-                      height="400"
-                      placeholder="blur"
-                      priority
+                  <div className="hidden md:block">
+                    <YouTube
+                      videoId={data.link}
+                      opts={opts}
+                      onPlay={onPlay}
+                      onPause={onPause}
+                      onReady={onPlayerReady}
                     />
-                    <h3 className="text-offwhite text-xl md:text-3xl font-semibold leading-relaxed">
-                      {data.course}
-                    </h3>
-                    <p className="text-offwhite text-base md:text-lg font-normal leading-relaxed">
-                      {data.description}
-                    </p>
+                  </div>
+
+                  <div className="block md:hidden">
+                    <YouTube
+                      videoId={data.link}
+                      opts={mobileOpts}
+                      onPlay={onPlay}
+                      onPause={onPause}
+                      onReady={onPlayerReady}
+                    />
                   </div>
                 </div>
               ))}

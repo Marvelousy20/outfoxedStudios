@@ -67,7 +67,8 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/#services">Services</Link>
+            {/* <Link href="/#services">Services</Link> */}
+            <Link href="/services">Services</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
@@ -118,7 +119,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </motion.li>
           <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
-            <Link href="/#services">Services</Link>
+            <Link href="/services">Services</Link>
           </motion.li>
           <motion.li variants={itemMotion} onClick={() => setToggled(false)}>
             <Link href="/about">About</Link>

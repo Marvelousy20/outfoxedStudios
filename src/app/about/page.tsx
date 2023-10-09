@@ -4,7 +4,6 @@ import Image from "next/image";
 import Title from "../components/Title";
 import contactImage from "../../../public/images/Contact.png";
 import ContactCard from "../components/ContactCard";
-import B3 from "../../../public/images/b3.png";
 import AOS from "aos";
 
 export default function About() {
@@ -56,7 +55,7 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="pt-20 md:pt-32 lg:pt-40 max-w-2xl mx-auto text-start space-y-16 relative">
+            <div className="pt-20 md:pt-32 lg:pt-40 max-w-5xl mx-auto text-start space-y-16 relative">
               <div className="relative">
                 <Title title="Who we are" />
                 <p
@@ -71,19 +70,128 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="relative">
-                <Title title="Meet Our Founders" />
-                <p
-                  className="text-lg text-offwhite font-normal leading-relaxed"
-                  data-aos="fade in"
-                >
-                  Our journey began with Outfoxedgaming, a seasoned YouTuber
-                  with a thriving channel boasting 1.2 million subscribers and a
-                  remarkable 1 billion views. Outfoxed has been a passionate
-                  content creator for over a decade, and their dedication to
-                  producing high-quality, engaging videos has been the driving
-                  force behind our success.
-                </p>
+              <div
+                className="relative grid grid-cols-2 gap-16"
+                data-aos="zoom-in"
+              >
+                {/* <div>
+                  <Title title="Meet Our Founders" />
+                  <p
+                    className="text-lg text-offwhite font-normal leading-relaxed"
+                    data-aos="fade in"
+                  >
+                    Our journey began with Outfoxedgaming, a seasoned YouTuber
+                    with a thriving channel boasting 1.2 million subscribers and
+                    a remarkable 1 billion views. Outfoxed has been a passionate
+                    content creator for over a decade, and their dedication to
+                    producing high-quality, engaging videos has been the driving
+                    force behind our success.
+                  </p>
+                </div> */}
+
+                <div className="max-w-sm">
+                  <h2 className="text-2xl lg:text-4xl font-bold text-primary-main">
+                    Meet the Team
+                  </h2>
+                  <p className="mt-2">
+                    Meet the awesome team that is dedicated to bringing your
+                    business and you to success!
+                  </p>
+
+                  <p className="text-offwhite mt-6">
+                    Our journey began with Outfoxedgaming, a seasoned YouTuber
+                    with a thriving channel boasting 1.2 million subscribers and
+                    a remarkable 1 billion views. Outfoxed has been a passionate
+                    content creator for over a decade, and their dedication to
+                    producing high-quality, engaging videos has been the driving
+                    force behind our success.
+                  </p>
+                </div>
+
+                <div className="">
+                  <Image
+                    src="/images/jim.jpeg"
+                    alt="jim"
+                    width={350}
+                    height={200}
+                    className="rounded"
+                  />
+
+                  <div>
+                    <h3 className="text-2xl text-primary-main font-semibold font-sans mt-2">
+                      Jim Whittle
+                    </h3>
+
+                    <p>
+                      Jim Whittle is a veteran of the technology industry with
+                      decades of experience in all facets of business. His
+                      career achievements include startups, established software
+                      companies and industry leading telecommunications
+                      companies, as well as two of the world&apos;s most
+                      successful technology companies
+                    </p>
+                  </div>
+                </div>
+
+                <div className="">
+                  <Image
+                    src="/images/rob.jpg"
+                    alt="jim"
+                    width={350}
+                    height={200}
+                    className="rounded"
+                  />
+
+                  <div>
+                    <h3 className="text-2xl text-primary-main font-semibold font-sans mt-2">
+                      Robert Murphy
+                    </h3>
+
+                    <p>
+                      Robert Murphy is a seasoned Social Media Expert with a
+                      decade of experience in video editing, copywriting, and
+                      social media growth. He has an impressive track record of
+                      nurturing multiple social media accounts to millions of
+                      followers and accumulating over 3 billion views.
+                      Robert&apos;s passion lies in leveraging the power of
+                      social media to enhance brands, engage audiences, and
+                      deliver tangible results. Whether it&apos;s crafting
+                      compelling content, devising winning growth strategies, or
+                      perfecting visual elements, Robert is dedicated to helping
+                      you supercharge your online presence and achieve your
+                      social media goals.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="">
+                  <Image
+                    src="/images/jen.jpeg"
+                    alt="jim"
+                    width={350}
+                    height={200}
+                    className="rounded"
+                  />
+
+                  <div>
+                    <h3 className="text-2xl text-primary-main font-semibold font-sans mt-2">
+                      Jennifer Arnold
+                    </h3>
+
+                    <p>
+                      Jennifer Arnold is a seasoned veteran in the fields of
+                      animation and software engineering. With a wealth of
+                      experience, she specializes in designing and developing
+                      cutting-edge websites and applications. Her creative
+                      insights and technical prowess are the driving force
+                      behind her ability to bring ideas to life in the digital
+                      world. Jennifer&apos;s dedication to crafting innovative
+                      solutions ensures that her clients receive nothing less
+                      than exceptional results, making her the go-to expert for
+                      all your web and app development needs.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div className="relative">

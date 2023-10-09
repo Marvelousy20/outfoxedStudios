@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="bg-background relative bottom-0 px-4 md:px-0 pb-10">
+    <div className="bg-background relative bottom-0 px-4 md:px-0 pb-10 pt-10">
       <div className="absolute inset-0">
         <img src="/images/line.png" alt="line" className="w-full h-full" />
       </div>
@@ -15,7 +15,9 @@ export default function Footer() {
 
       <div className="md:flex flex-col md:flex-row justify-around items-center mt-20 relative">
         <div className="grid text-primary50">
-          <a href="mailto:hello@outfoxed.com">hello@outfoxedproduction.com</a>
+          <a href="mailto:hello@outfoxed.com">
+            support@outfoxedproductions.com
+          </a>
           <br />
 
           <div className="space-y-8 md:space-y-0 md:gap-6 md:inline-flex">

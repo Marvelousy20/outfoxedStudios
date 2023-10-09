@@ -3,71 +3,103 @@
 import Image from "next/image";
 import { useState } from "react";
 import Title from "../Title";
-import MobileService from "./mobileServeice";
+import MobileService from "./mobileService";
 import B2 from "../../../../public/images/b2.png";
+import Link from "next/link";
 
 const services = [
   {
-    title: "Youtube Services",
+    title: "Website Services",
     number: "01",
     servicesRendered: [
       {
-        img: "/images/videoEditing.png",
-        name: "Video Editing",
-        variaties: ["Short", "full length"],
-      },
-      {
-        img: "/images/consulting.png",
-        name: "Consulting & Coaching",
-        variaties: ["Content Ideation", "Content Strategy"],
-      },
-      {
-        img: "/images/graphicdesign.png",
-        name: "Graphics Design",
-        variaties: ["thumbnails", "Banners", "logo", "merchandise"],
+        img: "/images/animation.png",
+        name: "Frontend development",
       },
       {
         img: "/images/animation.png",
-        name: "3d Animation",
-        variaties: ["short", "Full lenght"],
+        name: "Backend development",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Search Engine Optimization (SEO)",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Keyword Research",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Content Creation",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Copy Writing",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Script Writing and Storyboarding",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Custom Applications Development",
+      },
+      {
+        img: "/images/animation.png",
+        name: "Animation (3D Animation) ",
       },
     ],
   },
 
   {
-    title: "Tiktok Services",
+    title: "Social Media Management",
     number: "02",
     servicesRendered: [
       {
         img: "/images/videoEditing.png",
-        name: "Video Editing",
-        variaties: ["Short", "full length"],
+        name: "Content Optimization",
       },
       {
-        img: "/images/consulting.png",
-        name: "Consulting & Coaching",
-        variaties: ["Content Ideation", "Content Strategy"],
+        img: "/images/videoEditing.png",
+        name: "Website and Channel Optimization for Social Media",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Title/Tags/Description Optimization for Video Uploads",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Content Creation and Ads",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Marketing Services",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Marketing Campaigns",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Video Editing",
       },
     ],
   },
   {
-    title: "Streaming Services",
+    title: "Application Development",
     number: "03",
     servicesRendered: [
       {
-        img: "/images/consulting.png",
-        name: "Consulting & Coaching",
-        variaties: ["Content Ideation", "Content Strategy"],
+        img: "/images/graphicdesign.png",
+        name: "Android App Development",
       },
       {
         img: "/images/graphicdesign.png",
-        name: "Graphics Design",
-        variaties: ["thumbnails", "Banners", "logo", "merchandise"],
+        name: "iOS App Development",
       },
       {
-        img: "/images/animation.png",
-        name: "3d Animation",
-        variaties: ["short", "Full lenght"],
+        img: "/images/graphicdesign.png",
+        name: "Game Development",
       },
     ],
   },
@@ -76,13 +108,16 @@ const services = [
 export default function Services() {
   const [selected, setSelected] = useState(services[0].title);
   return (
-    <div className="pt-20 lg:pt-44 lg:px-28 px-4 relative" id="services">
+    <div
+      className="pt-20 lg:pt-44 lg:px-28 px-4 relative bg-gradient-to-r from-[#01121C] to-[#000A11]"
+      id="services"
+    >
       <div className="absolute top-0 inset-0 w-full">
         <Image
           src={B2}
           alt="background"
           width="1440"
-          height="1140"
+          height="2040"
           placeholder="blur"
           className="w-full"
         />
@@ -138,7 +173,7 @@ export default function Services() {
                 onClick={() => setSelected(service.title)}
               >
                 <div className="text-4xl">{service.number}.</div>
-                <div className="text-3xl whitespace-nowrap">
+                <div className="text-2xl whitespace-nowrap">
                   {service.title}
                 </div>
               </div>
@@ -150,7 +185,7 @@ export default function Services() {
                 key={index}
                 className={`${
                   selected === service.title
-                    ? "grid grid-cols-2 gap-12"
+                    ? "grid grid-cols-2 gap-8"
                     : "hidden"
                 }`}
               >
@@ -162,23 +197,32 @@ export default function Services() {
                         {s.name}
                       </p>
                       <div className="text-offwhite text-lg font-normal leading-relaxed grid mb-4">
-                        {s.variaties.map((variety) => (
+                        {/* {s.variaties?.map((variety) => (
                           <div key={index}>
                             <span>- {variety}</span>
                           </div>
-                        ))}
+                        ))} */}
                       </div>
-                      <a
+                      {/* <a
                         href="/contact"
                         className="text-primary-main border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300"
                       >
                         Hire me
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 ))}
               </div>
             ))}
+
+            <div className="mt-12 font-semibold text-center flex justify-center">
+              <Link
+                href="/contact"
+                className="text-primary-main !w-full border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300"
+              >
+                Hire me
+              </Link>
+            </div>
           </div>
         </div>
       </div>

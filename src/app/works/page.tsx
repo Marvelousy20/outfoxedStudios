@@ -2,15 +2,40 @@
 import { useState } from "react";
 import Image from "next/image";
 import Title from "../components/Title";
-import brandVideo from "../../../public/images/brandVideo.png";
-import brandVideo2 from "../../../public/images/brand2.png";
 import Moon2 from "../../../public/images/Moon2.svg";
-// import Link from "next/link";
 import ContactCard from "../components/ContactCard";
 import { works } from "../components/data";
+import YouTube, { YouTubeProps } from "react-youtube";
+import CompanyList from "../components/Companies/companyList";
 
 export default function Work() {
   const [selected, setSelected] = useState(works[0].title);
+  const [isPlay, setIsPlaying] = useState(false);
+
+  const onPlay = () => {
+    // Stop any other video that is currently playing
+    // Only allow one video to play at a time
+    setIsPlaying(true);
+  };
+
+  const onPause = () => {
+    setIsPlaying(false);
+  };
+
+  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  };
+
+  const opts = {
+    height: "400",
+    width: "608",
+  };
+
+  const mobileOpts = {
+    height: "350",
+    width: "350",
+  };
 
   return (
     <div className="bg-background px-4 xl:px-0 py-16 md:py-28 lg:py-32 text-white">
@@ -28,7 +53,7 @@ export default function Work() {
         <h3 className="text-5xl lg:text-7xl font-bold mb-4">Our Works</h3>
         <p className="text-offwhite">Checkout our works and be convinced!</p>
       </div>
-      <div className="relative z-10 mt-10 flex flex-col items-center gap-y-12">
+      <div className="relative z-10 mt-10 flex flex-col !items-center gap-y-12">
         <div className="tabs mt-6 relative">
           {works.map((work, index) => (
             <div key={index}>
@@ -55,28 +80,34 @@ export default function Work() {
             }`}
           >
             {work.data.map((data, i) => (
-              <div key={i} className="">
-                <div>
-                  <Image
-                    src={data.img}
-                    alt="img"
-                    width="608"
-                    height="400"
-                    placeholder="blur"
-                    priority
-                    className="rounded-lg"
+              <div key={i} className="flex justify-center">
+                <div className="hidden md:block">
+                  <YouTube
+                    videoId={data.link}
+                    opts={opts}
+                    onPlay={onPlay}
+                    onPause={onPause}
+                    onReady={onPlayerReady}
                   />
-                  <h3 className="text-offwhite text-xl md:text-3xl font-semibold leading-relaxed">
-                    {data.course}
-                  </h3>
-                  <p className="text-offwhite md:text-lg font-normal leading-relaxed">
-                    {data.description}
-                  </p>
+                </div>
+
+                <div className="block md:hidden">
+                  <YouTube
+                    videoId={data.link}
+                    opts={mobileOpts}
+                    onPlay={onPlay}
+                    onPause={onPause}
+                    onReady={onPlayerReady}
+                  />
                 </div>
               </div>
             ))}
           </div>
         ))}
+      </div>
+
+      <div className="mt-20">
+        <CompanyList />
       </div>
 
       {/* conquer section */}
