@@ -30,7 +30,7 @@ export default function ScrollToTopButton() {
 
   return (
     <div
-      className={`fixed bottom-4 z-50 right-4 ${
+      className={`fixed bottom-4 z-30 right-4 ${
         isVisible ? "block" : "hidden"
       }`}
     >

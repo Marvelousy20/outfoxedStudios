@@ -52,7 +52,7 @@ export default function Navbar() {
     <nav
       className={` ${
         isScrolled ? "bg-background" : "bg-transparent"
-      } h-[110px] px-8 md:px-16 lg:px-24 text-lg text-white z-20 sticky top-0 flex items-center justify-between`}
+      } h-[110px] px-8 md:px-16 lg:px-24 text-lg text-white z-50 sticky top-0 flex items-center justify-between`}
     >
       <div className="z-20">
         <a href="/" className="font-bold text-2xl md:text-3xl">
