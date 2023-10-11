@@ -14,7 +14,7 @@ export default function Accomplishment() {
             Over
           </sup>
           <span className="text-primary-main text-3xl md:text-2xl lg:text-4xl font-bold">
-            1 billion
+            2 Million
           </span>
           <span className="block text-zinc-600 text-lg font-normal leading-relaxed text-center">
             Subscribers
@@ -25,7 +25,7 @@ export default function Accomplishment() {
             Over
           </sup>
           <span className="text-primary-main text-3xl md:text-2xl lg:text-4xl font-bold">
-            1 billion
+            20 Million
           </span>
           <span className="block text-zinc-600 text-lg font-normal leading-relaxed text-center">
             Views acquired
@@ -48,7 +48,7 @@ export default function Accomplishment() {
       {/* container for three cards */}
       <div className="bg-card px-4 md:px-8 lg:px-12 xl:px-24 py-12 md:py-6 rounded-b-lg flex flex-col md:flex-row justify-between items-center">
         {/* First card */}
-        <div className="w-full md:w-auto">
+        {/* <div className="w-full md:w-auto">
           <h3>Live Feed</h3>
           <div className="px-4 py-6 bg-gray-950 bg-opacity-80 space-y-6 md:space-y-0 rounded-3xl backdrop-blur-xl flex-col justify-start items-start gap-6 md:inline-flex">
             <p>My channel</p>
@@ -88,11 +88,10 @@ export default function Accomplishment() {
               </span>
             </div>
 
-            {/* live data */}
             <p>Live data:</p>
 
             <div className="flex justify-between gap-6">
-              {/* Views */}
+
               <div className="text-center flex gap-3">
                 11.8M <br /> Views
                 <span className="self-end">
@@ -122,9 +121,9 @@ export default function Accomplishment() {
                   </svg>
                 </span>
               </div>
-              {/* Subscribers */}
+             
               <div className="text-center flex gap-3">
-                1.2M <br /> Subsribers
+                1.2M <br /> Subscribers
                 <span className="self-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -154,10 +153,10 @@ export default function Accomplishment() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Second card */}
-        <div className="w-full md:w-auto">
+        {/* <div className="w-full md:w-auto">
           <h3 className="invisible">hello</h3>
           <div className="px-4 py-6 bg-gray-950 bg-opacity-80 space-y-6 md:space-y-0 rounded-3xl backdrop-blur-xl md:flex-col md:justify-start items-start gap-6 md:inline-flex">
             <p>
@@ -199,11 +198,11 @@ export default function Accomplishment() {
               </span>
             </div>
 
-            {/* live data */}
+            
             <p>Live data:</p>
 
             <div className="flex gap-6 justify-between">
-              {/* Views */}
+              
               <div className="text-center flex gap-3">
                 11.8M <br /> Views
                 <span className="self-end">
@@ -233,9 +232,9 @@ export default function Accomplishment() {
                   </svg>
                 </span>
               </div>
-              {/* Subscribers */}
+              
               <div className="text-center flex gap-3">
-                1.2M <br /> Subsribers
+                1.2M <br /> Subscribers
                 <span className="self-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -265,12 +264,12 @@ export default function Accomplishment() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Third card */}
-        <div className="mt-12 md:mt-0">
-          <h1 className="font-semibold text-2xl md:text-lg lg:text-2xl leading-relaxed">
-            Want to learn how to <br /> achieve this?
+        <div className="py-12  md:mt-0 flex flex-col items-center w-full">
+          <h1 className="font-semibold text-2xl md:text-lg lg:text-4xl leading-relaxed">
+            Want to learn how to achieve this?
           </h1>
           <Link
             href="/contact"
