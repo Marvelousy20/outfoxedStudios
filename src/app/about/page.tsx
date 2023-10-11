@@ -35,15 +35,6 @@ export default function About() {
               data-aos="fade-up"
             >
               <h3>Welcome to</h3>
-              {/* <span>
-                <Image
-                  src="/images/logo.png"
-                  alt="outfoxed"
-                  width="130"
-                  height="130"
-                  priority
-                />
-              </span> */}
             </div>
 
             <h3 data-aos="fade-up">OutFoxed Productions</h3>

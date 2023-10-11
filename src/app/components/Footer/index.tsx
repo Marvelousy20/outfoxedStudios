@@ -15,22 +15,19 @@ export default function Footer() {
 
       <div className="md:flex flex-col md:flex-row justify-around items-center mt-20 relative">
         <div className="grid text-primary50">
-          <a href="mailto:hello@outfoxed.com">
+          <a href="mailto:support@outfoxedproductions .com">
             support@outfoxedproductions.com
           </a>
-          <br />
+          {/* <br /> */}
 
-          <div className="space-y-8 md:space-y-0 md:gap-6 md:inline-flex">
-            <div>
-              <a href="#linkedIn">LinkedIn</a>
-            </div>
+          {/* <div className="space-y-8 md:space-y-0 md:gap-6 md:inline-flex">
             <div>
               <a href="#twitter">Twitter</a>
             </div>
             <div>
               <a href="#instagram">Instagram</a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="hidden md:block">

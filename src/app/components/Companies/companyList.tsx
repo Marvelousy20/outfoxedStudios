@@ -27,12 +27,17 @@ function CompanyList() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
-      {companies.map((company, index) => (
-        <div key={index}>
-          <CompanyCard name={company} />
-        </div>
-      ))}
+    <div data-aos="fade-in">
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold text-center mb-6 text-primary-main">
+        Companies We&apos;ve done Ads for
+      </h2>
+      <div className="flex flex-wrap justify-center">
+        {companies.map((company, index) => (
+          <div key={index}>
+            <CompanyCard name={company} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

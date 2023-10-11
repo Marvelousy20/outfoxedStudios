@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import CountUp from "react-countup";
 
 export default function Accomplishment() {
   return (
@@ -35,7 +36,8 @@ export default function Accomplishment() {
             Over
           </sup>
           <span className="text-primary-main text-3xl md:text-2xl lg:text-4xl font-bold">
-            40+ multiple
+            <CountUp end={40} duration={5} />
+            <sup>+</sup> multiple
           </span>
           <span className="block text-zinc-600 text-lg font-normal leading-relaxed text-center">
             viral videos
