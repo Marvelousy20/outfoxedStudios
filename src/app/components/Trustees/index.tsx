@@ -7,7 +7,7 @@ import CountUp from "react-countup";
 
 const trustees = [
   {
-    img: "/images/invade-coffee.avif",
+    img: "/images/invade-coffee.png",
     name: "Invader Coffee",
     youtube: "Invader Coffee",
     instagramLink: "https://www.instagram.com/invadercoffee/?hl=en",
@@ -45,7 +45,8 @@ const trustees = [
   },
 
   {
-    img: "https://www.ewinracing.com/themes/default-bootstrap/img/logow.svg",
+    // img: "https://www.ewinracing.com/themes/default-bootstrap/img/logow.svg",
+    img: "/images/ewin.jpg",
     name: "Ewin Gaming Chair",
     youtube: "Ewin Racing",
     instagramLink: "https://www.instagram.com/ewinracing/",

@@ -113,7 +113,7 @@ export default function Services() {
       className="pt-20 lg:px-28 px-4 bg-black relative"
       id=""
     >
-      <div className="absolute top-0 inset-0 w-full">
+      {/* <div className="absolute top-0 inset-0 w-full">
         <Image
           src={B2}
           alt="background"
@@ -122,10 +122,13 @@ export default function Services() {
           placeholder="blur"
           className="w-full"
         />
-      </div>
+      </div> */}
       <div className="text-start md:text-center relative">
         <Title title="How I help you" />
-        <div className="inline-flex" data-aos="fade-up">
+        <div
+          className="inline-flex"
+          // data-aos="fade-up"
+        >
           <h3 className="text-3xl md:text-5xl md:leading-[65px] font-bold">
             Services I Offer
           </h3>
@@ -169,7 +172,7 @@ export default function Services() {
                 className={`tab pb-20 font-bold space-x-2 ${
                   selected === service.title
                     ? "border-b text-primary-main border-primary-main"
-                    : ""
+                    : "text-white"
                 }`}
                 onClick={() => setSelected(service.title)}
               >

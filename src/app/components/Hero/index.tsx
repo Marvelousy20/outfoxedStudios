@@ -41,8 +41,8 @@ export default function Hero() {
 
         <div
           className="text-primary50 text-6xl xl:text-8xl leading-[50px] font-bold mt-2 md:mt-5"
-          // data-aos="fade-up"
-          // data-aos-duration="1500"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <div className="inline-flex xl:gap-12 relative">
             <h3>Blast off</h3>
@@ -82,9 +82,9 @@ export default function Hero() {
 
         <div
           className="md:text-center text-offwhite text-lg md:text-xl font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
-          // data-aos="fade-up"
-          // data-aos-duration="1000"
-          // data-aos-delay="500"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
         >
           Whether you are a budding blogger, a thriving business, or an aspiring
           influencer, We are here to guide you towards content excellence and
@@ -129,7 +129,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="carousel w-full">
+      {/* <div className="carousel w-full">
         <div
           id="slide1"
           className="carousel-item relative w-full justify-center"
@@ -211,7 +211,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
