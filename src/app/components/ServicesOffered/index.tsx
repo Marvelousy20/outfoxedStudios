@@ -113,7 +113,7 @@ export default function Services() {
       className="pt-20 lg:px-28 px-4 bg-black relative"
       id=""
     >
-      {/* <div className="absolute top-0 inset-0 w-full">
+      <div className="absolute top-0 inset-0 w-full">
         <Image
           src={B2}
           alt="background"
@@ -122,13 +122,10 @@ export default function Services() {
           placeholder="blur"
           className="w-full"
         />
-      </div> */}
+      </div>
       <div className="text-start md:text-center relative">
         <Title title="How I help you" />
-        <div
-          className="inline-flex"
-          // data-aos="fade-up"
-        >
+        <div className="inline-flex" data-aos="fade-up">
           <h3 className="text-3xl md:text-5xl md:leading-[65px] font-bold">
             Services I Offer
           </h3>
@@ -136,9 +133,7 @@ export default function Services() {
 
         <div className="text-offwhite text-base md:text-lg font-normal leading-relaxed relative">
           <div className="relative inline-block">
-            <div
-            // data-aos="fade-up" data-aos-delay="150"
-            >
+            <div data-aos="fade-up" data-aos-delay="150">
               Your one stop shop for all things content creation
             </div>
             <div className="absolute right-0 md:-right-16 top-0">
@@ -162,9 +157,9 @@ export default function Services() {
 
       <div
         className="hidden lg:block mt-20 relative"
-        // data-aos="fade-up"
-        // data-aos-duration="2000"
-        // data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="200"
       >
         <div className="grid grid-cols-5 gap-x-20">
           <div className="col-span-2 tabs items-start flex-col text-start space-y-12">
@@ -222,9 +217,9 @@ export default function Services() {
 
       <div
         className="block lg:hidden relative"
-        // data-aos="fade-up"
-        // data-aos-duration="2000"
-        // data-aos-delay="200"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="200"
       >
         <MobileService />
       </div>
