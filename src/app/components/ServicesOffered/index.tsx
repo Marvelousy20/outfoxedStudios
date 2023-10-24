@@ -186,7 +186,7 @@ export default function Services() {
                 key={index}
                 className={`${
                   selected === service.title
-                    ? "grid grid-cols-2 gap-8"
+                    ? "grid grid-cols-2 gap-8 text-white"
                     : "hidden"
                 }`}
               >
