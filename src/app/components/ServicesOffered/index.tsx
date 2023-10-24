@@ -109,15 +109,16 @@ export default function Services() {
   const [selected, setSelected] = useState(services[0].title);
   return (
     <div
-      className="pt-20 lg:pt-44 lg:px-28 px-4 relative bg-gradient-to-r from-[#01121C] to-[#000A11]"
-      id="services"
+      // className="pt-20 lg:pt-44  relative bg-gradient-to-r from-[#01121C] to-[#000A11]"
+      className="pt-20 lg:px-28 px-4 bg-black"
+      id=""
     >
       <div className="absolute top-0 inset-0 w-full">
         <Image
           src={B2}
           alt="background"
           width="1440"
-          height="2040"
+          // height="2040"
           placeholder="blur"
           className="w-full"
         />
@@ -196,19 +197,6 @@ export default function Services() {
                       <p className="text-2xl font-semibold leading-relaxed">
                         {s.name}
                       </p>
-                      <div className="text-offwhite text-lg font-normal leading-relaxed grid mb-4">
-                        {/* {s.variaties?.map((variety) => (
-                          <div key={index}>
-                            <span>- {variety}</span>
-                          </div>
-                        ))} */}
-                      </div>
-                      {/* <a
-                        href="/contact"
-                        className="text-primary-main border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300"
-                      >
-                        Hire me
-                      </a> */}
                     </div>
                   </div>
                 ))}
