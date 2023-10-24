@@ -22,7 +22,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="">
+    <div>
       <div className="absolute top-0 w-full">
         <Image
           src={Background}
@@ -41,8 +41,8 @@ export default function Hero() {
 
         <div
           className="text-primary50 text-6xl xl:text-8xl leading-[50px] font-bold mt-2 md:mt-5"
-          data-aos="fade-up"
-          data-aos-duration="1500"
+          // data-aos="fade-up"
+          // data-aos-duration="1500"
         >
           <div className="inline-flex xl:gap-12 relative">
             <h3>Blast off</h3>
@@ -82,9 +82,9 @@ export default function Hero() {
 
         <div
           className="md:text-center text-offwhite text-lg md:text-xl font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
+          // data-aos-delay="500"
         >
           Whether you are a budding blogger, a thriving business, or an aspiring
           influencer, We are here to guide you towards content excellence and
@@ -212,61 +212,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* <div className="relative mt-24 px-4 md:px-0">
-        <div className="absolute inset-0 w-full">
-          <img src="/images/line.png" alt="line" className="w-full h-full" />
-        </div>
-        <div
-          className="max-w-3xl mx-auto text-start md:text-center"
-          data-aos="flip-right"
-          data-aos-duration="1500"
-        >
-          <Title title="Who we are" />
-          <div className="relative">
-            <div
-              className="text-white text-3xl md:text-5xl md:leading-[65px] font-bold mb-6"
-              data-aos="flip-right"
-              data-aos-duration="1500"
-              data-aos-delay="200"
-            >
-              Your partner in Content Success and Business Growth...
-            </div>
-            <div
-              className="text-offwhite text-base md:text-lg font-normal leading-[27px] mb-16 max-w-[514px] mx-auto"
-              data-aos="flip-left"
-            >
-              Outfoxed as an expert and experienced creator understands the
-              challenges you face in today&#39;s competitive landscape. I am
-              here to support, inspire, and collaborate with you, sharing in
-              your vision and helping you achieve content greatness.
-            </div>
-
-            <Link
-              href="/"
-              className="text-primary-main ease-in-out transition-all duration-300  text-lg font-normal leading-relaxed px-10 py-3 rounded-lg border border-primary50 inline-flex gap-4 hover:shadow-hard"
-            >
-              Learn more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-              >
-                <path
-                  d="M16 2C16 3.48 17.4667 5.69467 18.9493 7.55467C20.8587 9.94933 23.1373 12.0413 25.752 13.6387C27.7107 14.8347 30.0893 15.9827 32 15.9827M16 30C16 28.52 17.4667 26.3053 18.9493 24.4453C20.8587 22.0507 23.1373 19.9587 25.752 18.3613C27.7107 17.1653 30.0893 16.0173 32 16.0173M32 16H0H32Z"
-                  fill="white"
-                />
-                <path
-                  d="M16 2C16 3.48 17.4667 5.69467 18.9493 7.55467C20.8587 9.94933 23.1373 12.0413 25.752 13.6387C27.7107 14.8347 30.0893 15.9827 32 15.9827M16 30C16 28.52 17.4667 26.3053 18.9493 24.4453C20.8587 22.0507 23.1373 19.9587 25.752 18.3613C27.7107 17.1653 30.0893 16.0173 32 16.0173M32 16H-9.53674e-07"
-                  stroke="#404D56"
-                />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 }

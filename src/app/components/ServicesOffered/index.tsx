@@ -110,7 +110,7 @@ export default function Services() {
   return (
     <div
       // className="pt-20 lg:pt-44  relative bg-gradient-to-r from-[#01121C] to-[#000A11]"
-      className="pt-20 lg:px-28 px-4 bg-black"
+      className="pt-20 lg:px-28 px-4 bg-black relative"
       id=""
     >
       <div className="absolute top-0 inset-0 w-full">

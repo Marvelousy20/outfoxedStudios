@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { useMediaQuery } from "@/app/utils/useMediaQuery";
 import { motion } from "framer-motion";
