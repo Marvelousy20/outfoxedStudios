@@ -53,33 +53,182 @@ export default function About() {
                   className="text-lg text-offwhite font-normal leading-relaxed"
                   data-aos="fade in"
                 >
-                  Welcome to OutfoxedStudios, your trusted partner for
-                  professional video editing services! With over a decade of
-                  experience in the world of content creation and video editing,
-                  we understand the power of compelling visuals to captivate
-                  audiences and drive engagement.
+                  At Outfoxed Productions, we are more than just a Social Media
+                  Marketing Agency; we are your partners in navigating the
+                  dynamic and ever-expanding digital landscape. With a
+                  full-stack approach to digital marketing, we cater to
+                  businesses striving to carve their niche in the competitive
+                  online sphere.
                 </p>
               </div>
 
+              <div className="relative">
+                <Title title="Our Unique Edge" />
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
+                  What sets us apart is our collective experience in both
+                  influencer marketing and the tech industry. With our
+                  team&apos;s cumulative experience, we have garnered over 5
+                  million followers across various social media platforms. In
+                  addition, our seasoned professionals bring over two decades of
+                  hands-on experience in the rapidly evolving tech industry.
+                  This unique blend of influencer insights and technical
+                  expertise enables us to craft strategies that are not only
+                  innovative but also rooted in a deep understanding of the
+                  digital landscape.
+                </p>
+              </div>
+
+              <div className="relative">
+                <Title title="Decades of Digital Prowess" />
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
+                  With a cumulative experience of over 40 years in the tech
+                  world, we bring an in-depth understanding of the digital
+                  realm. From the early stages of the internet revolution to the
+                  current era of social media dominance, we have evolved
+                  alongside the digital landscape, accumulating insights and
+                  expertise that empower us to craft bespoke solutions for each
+                  of our clients.
+                </p>
+              </div>
+
+              <div className="relative">
+                <Title title="Our Commitment" />
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
+                  Driven by our passion for innovation and our commitment to
+                  excellence, we don&apos;t just offer services; we deliver
+                  comprehensive solutions that transcend conventional marketing
+                  approaches. By leveraging our multifaceted expertise and
+                  leveraging the latest digital tools and trends, we help
+                  businesses not just thrive but dominate their digital
+                  presence.
+                  <br />
+                  Join hands with us at Outfoxed Productions, and embark on an
+                  exciting journey towards digital success.
+                </p>
+              </div>
+
+              <div className="relative">
+                <Title title="Our Impact" />
+                <p
+                  className="text-lg text-offwhite font-normal leading-relaxed"
+                  data-aos="fade in"
+                >
+                  Through our strategic digital solutions, we have catalyzed the
+                  growth and expansion of numerous businesses across diverse
+                  industries. From enhancing brand visibility to fostering
+                  authentic audience engagement, our data-driven strategies have
+                  consistently yielded tangible results. By meticulously
+                  tailoring our approach to each client&apos;s unique
+                  requirements, we have fostered lasting connections between
+                  brands and their target audiences, driving not just short-term
+                  gains but also sustainable, long-term growth. Our commitment
+                  to innovation and adaptability has empowered businesses to
+                  navigate the complexities of the digital realm with
+                  confidence, enabling them to stay ahead of the curve in an
+                  ever-evolving online landscape. With a focus on measurable
+                  outcomes and a passion for driving meaningful change, we take
+                  pride in being an integral part of our clients&apos; success
+                  stories.
+                </p>
+              </div>
+
+              <div>
+                <Title title="Decades of Experience" />
+                {/* <h1 className="text-4xl font-bold mb-4">Our Mission</h1> */}
+                <p className="text-offwhite" data-aos="fade in">
+                  With a wealth of collective experience spanning several
+                  decades, our team at Outfoxed Productions stands as a
+                  testament to our unwavering dedication to mastering the
+                  digital realm. We&apos;ve witnessed the evolution of
+                  technology and online platforms firsthand, adapting and
+                  innovating with each shift in the digital landscape. Our
+                  diverse expertise, encompassing influencer marketing,
+                  technical insights, and a deep understanding of the digital
+                  marketing ecosystem, allows us to offer our clients a level of
+                  experience and insight that few can match. Our years of
+                  hands-on involvement in the digital world have provided us
+                  with a unique perspective that informs our strategies and
+                  ensures we remain at the forefront of digital marketing
+                  trends. Trust in our seasoned team to leverage this wealth of
+                  experience to drive your brand&apos;s success in the digital
+                  age.
+                </p>
+              </div>
+
+              <div>
+                <Title title="Why Choose Us" />
+                <div className="text-offwhite" data-aos="fade in">
+                  <div className="space-y-4">
+                    <div className="space-x-1">
+                      <span className="text-2xl text-primary-main font-semibold">
+                        Quality Execution:
+                      </span>
+                      <span>
+                        With a background in influencer marketing and decades of
+                        technical experience, we guarantee top-tier digital
+                        strategies that transcend expectations, ensuring your
+                        brand&apos;s online success.
+                      </span>
+                    </div>
+                    <div className="space-x-1">
+                      <span className="text-2xl text-primary-main font-semibold">
+                        Speedy Results:
+                      </span>
+                      <span>
+                        Understanding the importance of timely delivery, our
+                        streamlined processes promise swift execution without
+                        compromising on the quality of our services.
+                      </span>
+                    </div>
+                    <div className="space-x-1">
+                      <span className="text-2xl text-primary-main font-semibold">
+                        Tailored Solutions:
+                      </span>
+                      <span>
+                        Recognizing that each business is unique, we customize
+                        our strategies to precisely fit your specific
+                        requirements, whether it&apos;s comprehensive digital
+                        branding or targeted marketing campaigns.
+                      </span>
+                    </div>
+                    <div className="space-x-1">
+                      <span className="text-2xl text-primary-main font-semibold">
+                        Budget-Friendly Services:
+                      </span>
+                      <span>
+                        We firmly believe that high-quality digital marketing
+                        shouldn&apos;t be a luxury. Our competitive pricing
+                        structure is designed to accommodate various budgets
+                        without compromising on the quality of our services.
+                      </span>
+                    </div>
+                    <div className="space-x-1">
+                      <span className="text-2xl text-primary-main font-semibold">
+                        Client-Centric Approach:
+                      </span>
+                      <span>
+                        Your success is our ultimate goal. We work closely with
+                        you, incorporating your vision and objectives into every
+                        aspect of our strategies, ensuring that your digital
+                        presence aligns seamlessly with your business goals.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div
                 className="relative grid grid-cols-2 gap-16"
                 data-aos="zoom-in"
               >
-                {/* <div>
-                  <Title title="Meet Our Founders" />
-                  <p
-                    className="text-lg text-offwhite font-normal leading-relaxed"
-                    data-aos="fade in"
-                  >
-                    Our journey began with Outfoxedgaming, a seasoned YouTuber
-                    with a thriving channel boasting 1.2 million subscribers and
-                    a remarkable 1 billion views. Outfoxed has been a passionate
-                    content creator for over a decade, and their dedication to
-                    producing high-quality, engaging videos has been the driving
-                    force behind our success.
-                  </p>
-                </div> */}
-
                 <div className="max-w-sm">
                   <h2 className="text-2xl lg:text-4xl font-bold text-primary-main">
                     Meet the Team
@@ -126,7 +275,7 @@ export default function About() {
 
                 <div className="">
                   <Image
-                    src="/images/rob.jpg"
+                    src="/images/robert.jpg"
                     alt="jim"
                     width={350}
                     height={200}
@@ -181,95 +330,6 @@ export default function About() {
                       than exceptional results, making her the go-to expert for
                       all your web and app development needs.
                     </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative">
-                <Title title="Our Impact" />
-                <p
-                  className="text-lg text-offwhite font-normal leading-relaxed"
-                  data-aos="fade in"
-                >
-                  But our story doesn&apos;t end there. Outfoxed has also
-                  leveraged their expertise to assist numerous content creators
-                  in achieving a collective viewership of over 5 billion views!
-                  We take pride in having played a crucial role in the success
-                  stories of various YouTubers, helping them turn their visions
-                  into reality through expert video editing.
-                </p>
-              </div>
-
-              <div>
-                <Title title="A Decade of Editing Excellence" />
-                {/* <h1 className="text-4xl font-bold mb-4">Our Mission</h1> */}
-                <p className="text-offwhite" data-aos="fade in">
-                  With a decade of experience under our belt, our team brings
-                  unparalleled expertise to every project. We&apos;ve honed our
-                  skills over the years, staying ahead of industry trends and
-                  adopting the latest editing techniques and technologies.
-                  Whether it&apos;s a vlog, tutorial, promotional video, or any
-                  other type of content, we have the knowledge and creativity to
-                  make it shine.
-                </p>
-              </div>
-
-              <div>
-                <Title title="Why Choose Us" />
-                <div className="text-offwhite" data-aos="fade in">
-                  <div className="space-y-4">
-                    <div className="space-x-1">
-                      <span className="text-2xl text-primary-main font-semibold">
-                        Quality Assurance:
-                      </span>
-                      <span>
-                        We are committed to delivering top-notch video editing
-                        that exceeds your expectations. Your vision is our
-                        priority, and we won&apos;t rest until your content is
-                        perfect.
-                      </span>
-                    </div>
-                    <div className="space-x-1">
-                      <span className="text-2xl text-primary-main font-semibold">
-                        Fast Turnaround:
-                      </span>
-                      <span>
-                        We understand the importance of meeting deadlines. Our
-                        streamlined processes ensure swift delivery without
-                        compromising on quality.
-                      </span>
-                    </div>
-                    <div className="space-x-1">
-                      <span className="text-2xl text-primary-main font-semibold">
-                        Custom Solutions:
-                      </span>
-                      <span>
-                        Every project is unique, and we tailor our services to
-                        your specific needs. Whether you need a full video edit
-                        or assistance with a particular aspect, we&aspos;ve got
-                        you covered.
-                      </span>
-                    </div>
-                    <div className="space-x-1">
-                      <span className="text-2xl text-primary-main font-semibold">
-                        Affordable Pricing:
-                      </span>
-                      <span>
-                        We believe that high-quality video editing should be
-                        accessible to all. Our pricing is competitive and
-                        designed to fit various budgets.
-                      </span>
-                    </div>
-                    <div className="space-x-1">
-                      <span className="text-2xl text-primary-main font-semibold">
-                        Client-Centric Approach:
-                      </span>
-                      <span>
-                        Your satisfaction is our success. We collaborate closely
-                        with you to ensure your vision is realized and your
-                        goals are met.
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>

@@ -50,8 +50,10 @@ export default function Work() {
       </div>
       <div className="text-white max-w-xl mx-auto text-start md:text-center relative z-10">
         <Title title="Portfolio" />
-        <h3 className="text-5xl lg:text-7xl font-bold mb-4">Our Works</h3>
-        <p className="text-offwhite">Checkout our works and be convinced!</p>
+        <h3 className="text-5xl lg:text-7xl font-bold mb-4">Our Portfolio</h3>
+        <p className="text-offwhite">
+          Checkout our portfolio and be convinced!
+        </p>
       </div>
       <div className="relative z-10 mt-10 flex flex-col !items-center gap-y-12">
         <div className="tabs mt-6 relative">

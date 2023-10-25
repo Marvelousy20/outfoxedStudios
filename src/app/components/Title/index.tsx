@@ -5,7 +5,7 @@ interface Props {
 export default function Title({ title }: Props) {
   return (
     <div>
-      <span className="text-offwhite text-sm font-medium leading-tight inline-flex items-center">
+      <span className="text-offwhite text-lg md:text-xl font-bold leading-tight inline-flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

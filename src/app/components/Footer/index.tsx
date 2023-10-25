@@ -7,7 +7,7 @@ export default function Footer() {
         <img src="/images/line.png" alt="line" className="w-full h-full" />
       </div>
       <div className="flex flex-col md:flex-row justify-center relative">
-        <div className="text-5xl md:text-6xl xl:text-8xl font-bold font-sans text-center">
+        <div className="text-2xl md:text-3xl xl:text-5xl font-bold font-sans text-center">
           <span className="text-white">Outfoxed</span> <br />
           <span className="text-primary-main">Productions</span>
         </div>
@@ -18,16 +18,6 @@ export default function Footer() {
           <a href="mailto:support@outfoxedproductions .com">
             support@outfoxedproductions.com
           </a>
-          {/* <br /> */}
-
-          {/* <div className="space-y-8 md:space-y-0 md:gap-6 md:inline-flex">
-            <div>
-              <a href="#twitter">Twitter</a>
-            </div>
-            <div>
-              <a href="#instagram">Instagram</a>
-            </div>
-          </div> */}
         </div>
 
         <div className="hidden md:block">

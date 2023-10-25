@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Head from "next/head";
 import Title from "../Title";
 import MobileService from "./mobileService";
 import B2 from "../../../../public/images/b2.png";
@@ -113,6 +114,11 @@ export default function Services() {
       className="pt-20 lg:px-28 px-4 bg-black relative"
       id=""
     >
+      <Head>
+        <title>Services</title>
+        <meta property="og:title" content="Our Services" key="title" />
+      </Head>
+
       <div className="absolute top-0 inset-0 w-full">
         <Image
           src={B2}
