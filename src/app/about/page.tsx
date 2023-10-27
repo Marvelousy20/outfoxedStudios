@@ -5,6 +5,7 @@ import Title from "../components/Title";
 import contactImage from "../../../public/images/Contact.png";
 import ContactCard from "../components/ContactCard";
 import AOS from "aos";
+import Link from "next/link";
 
 export default function About() {
   useEffect(() => {
@@ -28,8 +29,8 @@ export default function About() {
         />
       </div>
       <div className="relative px-4">
-        <div className="flex flex-col pt-16 md:pt-24 lg:pt-32 text-start md:text-center">
-          <div className=" text-4xl xl:text-7xl leading-[60px] font-bold md:mt-5 text-primary-main">
+        <div className="flex flex-col pt-16 text-start md:text-center">
+          {/* <div className=" text-4xl xl:text-7xl leading-[60px] font-bold md:mt-5 text-primary-main">
             <div
               className="inline-flex items-center space-x-4"
               data-aos="fade-up"
@@ -43,10 +44,10 @@ export default function About() {
               And we are transforming your brand one
               <br className="block md:hidden" /> content at a time
             </p>
-          </div>
+          </div> */}
 
           <div className="relative">
-            <div className="pt-20 md:pt-32 lg:pt-40 max-w-5xl mx-auto text-start space-y-16 relative">
+            <div className="pt-20 max-w-5xl mx-auto text-start space-y-16 relative">
               <div className="relative">
                 <Title title="Who we are" />
                 <p
@@ -60,6 +61,13 @@ export default function About() {
                   businesses striving to carve their niche in the competitive
                   online sphere.
                 </p>
+
+                <Link
+                  href="#team"
+                  className="text-primary-main underline text-lg hover:opacity-70"
+                >
+                  Meet the team
+                </Link>
               </div>
 
               <div className="relative">
@@ -225,8 +233,11 @@ export default function About() {
                   </div>
                 </div>
               </div>
+
+              <div id="team"></div>
+
               <div
-                className="relative grid grid-cols-2 gap-16"
+                className="relative grid grid-cols-2 gap-16 pt-32"
                 data-aos="zoom-in"
               >
                 <div className="max-w-sm">

@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="text-white bg-background">
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <Portfolio />
       <Trustees />
     </main>

@@ -6,12 +6,48 @@ import Head from "next/head";
 import Title from "../Title";
 import MobileService from "./mobileService";
 import B2 from "../../../../public/images/b2.png";
+import contactImage from "../../../../public/images/Contact.png";
+
 import Link from "next/link";
 
 const services = [
   {
-    title: "Website Services",
+    title: "Social Media",
     number: "01",
+    servicesRendered: [
+      {
+        img: "/images/videoEditing.png",
+        name: "Content Optimization",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Website and Channel Optimization for Social Media",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Title/Tags/Description Optimization for Video Uploads",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Content Creation and Ads",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Marketing Services",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Marketing Campaigns",
+      },
+      {
+        img: "/images/videoEditing.png",
+        name: "Video Editing",
+      },
+    ],
+  },
+  {
+    title: "Website Services",
+    number: "02",
     servicesRendered: [
       {
         img: "/images/animation.png",
@@ -51,43 +87,8 @@ const services = [
       },
     ],
   },
-
   {
-    title: "Social Media Management",
-    number: "02",
-    servicesRendered: [
-      {
-        img: "/images/videoEditing.png",
-        name: "Content Optimization",
-      },
-      {
-        img: "/images/videoEditing.png",
-        name: "Website and Channel Optimization for Social Media",
-      },
-      {
-        img: "/images/videoEditing.png",
-        name: "Title/Tags/Description Optimization for Video Uploads",
-      },
-      {
-        img: "/images/videoEditing.png",
-        name: "Content Creation and Ads",
-      },
-      {
-        img: "/images/videoEditing.png",
-        name: "Marketing Services",
-      },
-      {
-        img: "/images/videoEditing.png",
-        name: "Marketing Campaigns",
-      },
-      {
-        img: "/images/videoEditing.png",
-        name: "Video Editing",
-      },
-    ],
-  },
-  {
-    title: "Application Development",
+    title: "Applications Development",
     number: "03",
     servicesRendered: [
       {
@@ -104,6 +105,24 @@ const services = [
       },
     ],
   },
+  {
+    title: "Animations",
+    number: "04",
+    servicesRendered: [
+      {
+        img: "/images/graphicdesign.png",
+        name: "3d Animation",
+      },
+      {
+        img: "/images/graphicdesign.png",
+        name: "Product Animation",
+      },
+      {
+        img: "/images/graphicdesign.png",
+        name: "Custom Image Animation",
+      },
+    ],
+  },
 ];
 
 export default function Services() {
@@ -111,7 +130,7 @@ export default function Services() {
   return (
     <div
       // className="pt-20 lg:pt-44  relative bg-gradient-to-r from-[#01121C] to-[#000A11]"
-      className="pt-20 lg:px-28 px-4 bg-black relative"
+      className="pt-20 lg:px-28 px-4 bg-black"
       id=""
     >
       <Head>
@@ -129,11 +148,11 @@ export default function Services() {
           className="w-full"
         />
       </div>
+
       <div className="text-start md:text-center relative">
-        <Title title="How I help you" />
         <div className="inline-flex" data-aos="fade-up">
-          <h3 className="text-3xl md:text-5xl md:leading-[65px] font-bold">
-            Services I Offer
+          <h3 className="text-3xl md:text-5xl md:leading-[65px] font-bold text-primary-main">
+            Services
           </h3>
         </div>
 
@@ -214,7 +233,7 @@ export default function Services() {
                 href="/contact"
                 className="text-primary-main !w-full border rounded border-primary50 text-lg px-4 py-2 hover:bg-primary-main hover:text-white hover:border-none transition-all ease-in-out duration-300"
               >
-                Hire me
+                Contact Us
               </Link>
             </div>
           </div>

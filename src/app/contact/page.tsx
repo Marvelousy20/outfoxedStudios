@@ -29,8 +29,8 @@ export default function Contact() {
         <div className="bg-blend-hard-light mix-blend-hard absolute inset-0 bg-gradient-to-b from-[rgba(13,22,27,0.30)] to-[rgba(13,22,27,0.30)]" />
       </div>
       <div className="text-white max-w-5xl mx-auto text-start md:text-center relative z-10 pb-24">
-        <Title title="Let's talk" />
-        <div className="text-5xl lg:text-7xl font-bold mt-5 text-primary50">
+        {/* <div className="text-5xl lg:text-7xl font-bold mt-5 text-primary50">
+          
           <div className="inline-flex gap-4">
             <h3>Talk to us</h3>
             <span>
@@ -57,7 +57,13 @@ export default function Contact() {
           <p className="text-sm text-offwhite mt-4">
             Take your brand to the next level, by hiring us!
           </p>
-        </div>
+        </div> */}
+        <h4 className="text-3xl">
+          We look forward to connecting with you and supporting all of your
+          social media initiatives. Please give us some basic information about
+          how we can help and one of our specialists will be in touch with you
+          very soon.
+        </h4>
       </div>
 
       <div className="relative">

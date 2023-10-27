@@ -11,7 +11,7 @@ export default function HomeContact() {
           Conquer the content world and make your mark in your industry!
         </h3>
         <p className="text-base md:text-lg font-normal leading-relaxed text-offwhite">
-          let us tailor a content solution that
+          Let us tailor a content solution that
           <br className="block md:hidden" /> propels you towards success.
         </p>
 
@@ -21,7 +21,7 @@ export default function HomeContact() {
         >
           <span>Let&apos;s talk</span>
           <div className="w-3.5 h-px border border-white"></div>
-          <span>contents</span>
+          <span>content</span>
           <Image src="/images/blast2.png" alt="blast2" width="26" height="26" />
         </Link>
       </div>

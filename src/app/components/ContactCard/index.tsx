@@ -17,7 +17,7 @@ export default function ContactCard({ text }: Props) {
         {text}
       </h3>
       <p className="text-lg font-normal leading-relaxed text-offwhite">
-        let us tailor a content solution that propels you towards success.
+        Let us tailor a content solution that propels you towards success.
       </p>
 
       <Link
@@ -26,7 +26,7 @@ export default function ContactCard({ text }: Props) {
       >
         <span>Let&apos;s talk</span>
         <div className="w-3.5 h-px border border-white"></div>
-        <span>contents</span>
+        <span>content</span>
         <Image src="/images/blast2.png" alt="blast2" width="26" height="26" />
       </Link>
     </div>

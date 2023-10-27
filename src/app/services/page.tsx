@@ -11,5 +11,9 @@ export default function Page() {
     });
   }, []);
 
-  return <Services />;
+  return (
+    <div className="relativ">
+      <Services />;
+    </div>
+  );
 }
