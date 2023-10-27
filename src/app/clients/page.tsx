@@ -135,8 +135,8 @@ export default function Client() {
                   <Image
                     src={trustee.img}
                     alt="img"
-                    width="70"
-                    height="70"
+                    width="100"
+                    height="100"
                     className="mb-8"
                   />
                   <span className="flex items-center gap-x-2 mb-4 text-offwhite hover:opacity-80">

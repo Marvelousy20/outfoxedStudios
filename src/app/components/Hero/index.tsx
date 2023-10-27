@@ -34,16 +34,16 @@ export default function Hero() {
         />
       </div>
 
-      <div className="lg:max-w-[70rem] relative mx-auto text-start md:text-center pt-12 md:pt-36 pb-24 px-4 md:px-0">
+      <div className="lg:max-w-[70rem] relative mx-auto text-start md:text-center pt-12 md:pt-28 pb-24 px-4 md:px-0">
         <div
-          className="text-primary50 text-6xl xl:text-8xl leading-[50px] font-bold mt-2 md:mt-5"
+          className="text-primary50 text-4xl md:text-6xl xl:text-7xl leading-[40px] font-bold mt-2 md:mt-5"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="inline-flex xl:gap-12 relative">
             <h3>Welcome to</h3>
 
-            <div className="icon-slider hidden md:block h-[auto] md:h-[100px]">
+            <div className="icon-slider hidden md:block h-[auto] md:h-[50px] xl:h-[80px]">
               {icons.map((icon, index) => (
                 <div
                   key={index}
@@ -57,7 +57,7 @@ export default function Hero() {
                     width="70"
                     height="70"
                     priority
-                    className="hidden md:block"
+                    className="hidden xl:block"
                   />
 
                   <Image
@@ -77,13 +77,14 @@ export default function Hero() {
         </div>
 
         <div
-          className="md:text-center text-offwhite text-lg md:text-xl font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
+          className="md:text-center text-offwhite text-lg font-normal leading-relaxed mt-4 mb-12 lg:max-w-[50rem] mx-auto"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="500"
         >
-          and managing top-performing social media strategies and campaigns for
-          businesses and influencers.
+          We have over a decade of experience creating and managing
+          top-performing social media strategies and campaigns for businesses
+          and influencers.
           <br />
           We do this by managing social media networks such as Facebook,
           Instagram, Twitter, LinkedIn and YouTube on your behalf.

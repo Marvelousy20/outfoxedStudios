@@ -5,7 +5,7 @@ import Title from "../components/Title";
 import contactImage from "../../../public/images/Contact.png";
 import ContactCard from "../components/ContactCard";
 import AOS from "aos";
-import Link from "next/link";
+import a from "next/link";
 
 export default function About() {
   useEffect(() => {
@@ -14,6 +14,14 @@ export default function About() {
       once: false,
     });
   }, []);
+
+  const scrollToSection = (sectionId: any) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="text-white bg-background pb-24">
       <div className="h-screen absolute w-full top-0">
@@ -62,12 +70,13 @@ export default function About() {
                   online sphere.
                 </p>
 
-                <Link
+                <a
                   href="#team"
                   className="text-primary-main underline text-lg hover:opacity-70"
+                  onClick={() => scrollToSection("team")}
                 >
                   Meet the team
-                </Link>
+                </a>
               </div>
 
               <div className="relative">

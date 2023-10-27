@@ -63,7 +63,7 @@ export default function Work() {
                 className={`tab tab-bordered text-sm md:text-xl lg:text-3xl py-10 md:py-16 xl:py-20 ${
                   selected === work.title
                     ? "tab-active text-primary-main !border-b-primary-main"
-                    : ""
+                    : "text-white"
                 }`}
                 onClick={() => setSelected(work.title)}
               >

@@ -30,8 +30,8 @@ export default function Portfolio() {
   };
 
   const opts = {
-    height: "300",
-    width: "508",
+    height: "250",
+    width: "408",
   };
 
   const mobileOpts = {
@@ -63,7 +63,7 @@ export default function Portfolio() {
                 className={`tab tab-bordered ${
                   selected === work.title
                     ? "tab-active text-primary-main !border-b-primary-main"
-                    : ""
+                    : "text-white"
                 }`}
                 onClick={() => setSelected(work.title)}
               >
@@ -83,7 +83,7 @@ export default function Portfolio() {
               key={index}
               className={`w-full ${
                 selected === work.title
-                  ? "grid grid-cols-1 md:grid-cols-2 gap-12"
+                  ? "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12"
                   : "hidden"
               }`}
             >
