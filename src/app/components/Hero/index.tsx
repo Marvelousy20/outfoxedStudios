@@ -82,9 +82,6 @@ export default function Hero() {
           data-aos-duration="1000"
           data-aos-delay="500"
         >
-          {/* Whether you are a budding blogger, a thriving business, or an aspiring
-          influencer, We are here to guide you towards content excellence and
-          success in your industry. We have over a decade of experience creating */}
           and managing top-performing social media strategies and campaigns for
           businesses and influencers.
           <br />
@@ -96,7 +93,7 @@ export default function Hero() {
         </div>
 
         <a
-          href="/contact"
+          href="/clients"
           className="md:w-64 w-56 relative md:h-16 mb-4 hover:opacity-75 ease-in-out transition-all duration-300 text-lg font-semibold py-3 bg-primary-main rounded-lg justify-center items-center gap-2 inline-flex hover:shadow-hard"
         >
           View some of our clients

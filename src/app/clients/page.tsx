@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import HomeContact from ".././components/ContactCard/homeContact";
 import B2 from "../../../public/images/b2.png";
 import Title from "../components/Title";
@@ -75,6 +75,22 @@ export default function Client() {
       once: false,
     });
   }, []);
+  const [currentItem, setCurrentItem] = useState(0);
+
+  const prevItem = (e: any) => {
+    e.preventDefault();
+    if (currentItem > 0) {
+      setCurrentItem(currentItem - 1);
+    }
+  };
+
+  const nextItem = (e: any) => {
+    e.preventDefault();
+    if (currentItem < trustees.length - 1) {
+      setCurrentItem(currentItem + 1);
+    }
+  };
+
   return (
     <div className="md:pt-20 lg:pt-32">
       <div className="absolute top-0 w-full -z-10">
@@ -109,9 +125,10 @@ export default function Client() {
 
         <div className="relative mt-12 md:mt-16 as isolate aspect-[1.5] md:px-8 pb-8">
           <div className="z-10 text-white relative">
-            <div className="carousel carousel-center max-w-full p-4 space-x-4">
+            <div className="carousel relative carousel-center max-w-full p-4 space-x-4">
               {trustees.map((trustee, i) => (
                 <div
+                  id={`slide${i}`}
                   key={i}
                   className="px-6 py-4 lg:px-8 lg:py-8 carousel-item grid w-[250px] bg-neutral-900 bg-opacity-75 rounded-3xl backdrop-blur-xl"
                 >
@@ -154,6 +171,26 @@ export default function Client() {
                   </div>
                 </div>
               ))}
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                {currentItem > 0 && (
+                  <a
+                    href={`#slide${currentItem - 1}`}
+                    className="btn btn-circle"
+                    onClick={prevItem}
+                  >
+                    ❮
+                  </a>
+                )}
+                {currentItem < trustees.length - 1 && (
+                  <a
+                    href={`#slide${currentItem + 1}`}
+                    className="btn btn-circle"
+                    onClick={nextItem}
+                  >
+                    ❯
+                  </a>
+                )}
+              </div>
             </div>
           </div>
 
