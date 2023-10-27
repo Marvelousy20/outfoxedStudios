@@ -1,9 +1,12 @@
-import Title from "../Title";
+"use client";
 import Image from "next/image";
-import HomeContact from "../ContactCard/homeContact";
-import B2 from "../../../../public/images/b2.png";
+import { useEffect } from "react";
+import HomeContact from ".././components/ContactCard/homeContact";
+import B2 from "../../../public/images/b2.png";
+import Title from "../components/Title";
 import { FiInstagram } from "react-icons/fi";
 import CountUp from "react-countup";
+import AOS from "aos";
 
 const trustees = [
   {
@@ -65,11 +68,16 @@ const trustees = [
     subscribers: 21.8,
   },
 ];
-
-export default function Trustees() {
+export default function Client() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
-    <div className="relative md:pt-20 lg:pt-32">
-      <div className="absolute top-0 w-full">
+    <div className="md:pt-20 lg:pt-32">
+      <div className="absolute top-0 w-full -z-10">
         <Image
           src={B2}
           alt="background"
@@ -79,10 +87,10 @@ export default function Trustees() {
           className="w-full"
         />
       </div>
-      <div className="text-start md:text-center relative">
+      <div className="text-start md:text-center relative text-white">
         <div className="px-4">
           <Title title="My Achievements" />
-          <div className="">
+          <div className="relative">
             <h3
               className="text-3xl md:text-5xl font-bold max-w-lg mx-auto"
               data-aos="fade-up"
